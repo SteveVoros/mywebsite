@@ -1,0 +1,21 @@
+#title {
+    text-align: center;
+}
+
+.subtitle {
+    text-align: center;
+    padding: 10px 0px 0px 0px;
+    letter-spacing: 1.5px;
+    line-height: 1.2em;
+}
+
+.padding-after-title {
+    padding: 0px 0px 30px 0px;
+    border: 0;
+}
+
+@media (min-width: 768px) {
+    #title {
+        padding: 230px 0px 0px 0px;
+    }
+}

@@ -1,0 +1,90 @@
+.custom-glyph {
+    font-size: 36px;
+    padding: 10px 0 10px 0;
+}
+
+.separator {
+    border-bottom: 3px solid #EC0856;
+    width: 210px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 45px;
+    margin-bottom: 45px;
+    padding: 0;
+}
+
+.contact-form {
+    width: 270px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+label {
+    font-weight: 400;
+}
+
+.form-control.ng-touched.ng-invalid {
+    box-shadow: 0px 0px 5px #EC0856;
+    border: 1px solid #EC0856;
+}
+
+.validation-alert {
+    font-size: 14px;
+    color: #EC0856;
+}
+
+.submit-button {
+    color: fff;
+    width: 200px;
+    background-color: rgb(54, 115, 168);
+    border: 1px solid rgba(39, 55, 71, 0.74);
+    border-radius: 30px;
+    transition: all 0.5s;
+    margin-top: 20px;
+}
+
+.submit-button:active,
+.submit-button:focus,
+.submit-button:visited {
+    outline: none;
+}
+
+.submit-button:hover {
+    background-color: rgb(39, 55, 71);
+    color: rgb(169, 203, 236);
+    border: 2px solid rgb(169, 203, 236);
+}
+
+@media (min-width: 576px) {
+    .custom-glyph {
+        padding: 20px 0 20px 0;
+    }
+
+    .separator {
+        width: 230px;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
+    .contact-form {
+        width: 350px;
+    }
+
+    .validation-alert {
+        font-size: 16px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .separator {
+        width: 320px;
+    }
+
+    .contact-form {
+        width: 400px;
+    }
+
+    .submit-button {
+        width: 250px;
+    }
+}
