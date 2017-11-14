@@ -8,7 +8,7 @@
         </a>
     </div>
     <div class="toasty-background" [class.visually-hidden-background]="visuallyHidden" [style.display]="displayToasty" (animationend)="onTransitionEnd()">
-        <div class="toasty-hireme" [class.visually-hidden-toasty]="visuallyHidden">
+        <div class="toasty toasty-hireme" [class.visually-hidden-toasty]="visuallyHidden">
             <div class="toasty-hireme-header">
                 <button class="toasty-hireme-close-button" (click)="closeToasty()">
                     <span>x</span>
@@ -33,6 +33,14 @@
                     </div>
                 </div>
             </div>
+        </div>
+    </div>
+    <div class="toasty-background">
+        <div class="toasty toasty-messagesent">
+            <button class="toasty-hireme-close-button" (click)="closeToasty()">
+                <span>x</span>
+            </button>
+            <p>Your message has been successfully sent.</p>
         </div>
     </div>
     <div class="row">

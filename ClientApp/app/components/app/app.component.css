@@ -42,21 +42,51 @@
     to {background-color: rgba(0, 0, 0, 0);}
 }
 
-.toasty-hireme {
+.toasty {
     background-color: rgb(255, 255, 255);
     position: fixed;
-    left: 50vmax;
+    left: 50vw;
     top: 40vh;
     margin-left: -150px;
     margin-top: -185px;
     height: 370px;
     width: 300px;
-    z-index: 5;
+    z-index: 4;
     border-radius: 6px 6px 5px 5px;
     font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     transition: all 0.5s;
     animation-name: slideInToasty;
     animation-duration: 0.3s;
+}
+
+.toasty-hireme {
+    left: 50vw;
+    top: 40vh;
+    margin-left: -150px;
+    margin-top: -185px;
+    height: 370px;
+    width: 300px;
+}
+
+.toasty-messagesent {
+    background-color: rgb(38, 54, 70);
+    color: white;
+    font-weight: 100;
+    padding: 30px 30px;
+    left: 50vw;
+    top: 40vh;
+    margin-left: -150px;
+    margin-top: -75px;
+    height: 150px;
+    width: 300px;
+    z-index: 5;
+    text-align: center;
+}
+
+.toasty-messagesent p {
+    margin-top: 10%;
+    margin-bottom: 10%;
+    letter-spacing: 2px;
 }
 
 @keyframes slideInToasty {
