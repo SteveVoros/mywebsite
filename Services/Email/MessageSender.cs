@@ -2,8 +2,10 @@ using System;
 using System.Net;
 using System.Net.Mail;
 using System.Threading.Tasks;
+using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Options;
 using mywebsite.Models;
+using mywebsite.Services.Azure;
 
 namespace mywebsite.Services.Email
 {
@@ -14,9 +16,11 @@ namespace mywebsite.Services.Email
         private string Subject { get; set; }
         private string Message { get; set; }
         private EmailSettings _emailSettings { get; }
-        public MessageSender(IOptions<EmailSettings> emailSettings)
+        private KeyVaultEmailSecrets _keyvault;
+        public MessageSender(IOptions<EmailSettings> emailSettings, IOptions<KeyVaultEmailSecrets> keyVault)
         {
             _emailSettings = emailSettings.Value;
+            _keyvault = keyVault.Value;
         }
 
         public Task SendMessageAsync(IContactMessage message)
@@ -35,9 +39,9 @@ namespace mywebsite.Services.Email
             {
                 MailMessage mail = new MailMessage()
                 {
-                    From = new MailAddress(_emailSettings.UsernameEmail)
+                    From = new MailAddress(_keyvault.Username)
                 };
-                mail.To.Add(new MailAddress(_emailSettings.ToEmail));
+                mail.To.Add(new MailAddress(_keyvault.ToEmail));
                 // mail.CC.Add(new MailAddress(this.FromEmail));
 
                 mail.Subject = "From: " + this.Name + " Subject: " + this.Subject;
@@ -48,7 +52,7 @@ namespace mywebsite.Services.Email
                 using (SmtpClient smtp = new SmtpClient(_emailSettings.PrimaryDomain, _emailSettings.PrimaryPort))
                 {
                     smtp.UseDefaultCredentials = false;
-                    smtp.Credentials = new NetworkCredential(_emailSettings.UsernameEmail, _emailSettings.UsernamePassword);
+                    smtp.Credentials = new NetworkCredential(_keyvault.Username, _keyvault.Password);
                     smtp.EnableSsl = true;
                     smtp.DeliveryMethod = SmtpDeliveryMethod.Network;
                     await smtp.SendMailAsync(mail);
