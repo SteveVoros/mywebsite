@@ -3,11 +3,11 @@
         <button class="callme-button" (click)="openToasty()">
             <span class="glyphicon glyphicon-earphone phone"></span>
         </button>
-            <a [routerLink]="['/contact']" fragment="title" class="hireme">
-                Hire me now
-            </a>
+        <a [routerLink]="['/contact']" fragment="title" class="hireme">
+            Hire me now
+        </a>
     </div>
-    <div class="toasty-background"  [class.visually-hidden-background]="visuallyHidden" [style.display]="displayToasty" (animationend)="onTransitionEnd()">
+    <div class="toasty-background" [class.visually-hidden-background]="visuallyHidden" [style.display]="displayToasty" (animationend)="onTransitionEnd()">
         <div class="toasty-hireme" [class.visually-hidden-toasty]="visuallyHidden">
             <div class="toasty-hireme-header">
                 <button class="toasty-hireme-close-button" (click)="closeToasty()">
