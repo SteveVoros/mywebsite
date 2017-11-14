@@ -9,21 +9,48 @@ import {
 })
 
 export class AppComponent {
-    displayToasty: string = 'none';
-    visuallyHidden: boolean = false;
+    displayBackground: string = 'none';
+    displayContactToasty: string = 'none';
+    displayMessageToasty: string = 'none';
+    visuallyHiddenBackground: boolean = false;
+    visuallyHiddenContactToasty: boolean = false;
+    visuallyHiddenMessageToasty: boolean = false;
 
-    openToasty() {
-        this.displayToasty = 'initial';
+    openContactToasty() {
+        this.displayContactToasty = 'initial';
+        this.displayBackground = 'initial';
     }
 
-    closeToasty() {
-        this.visuallyHidden = true;
+    closeContactToasty() {
+        this.visuallyHiddenContactToasty = true;
+        this.visuallyHiddenBackground = true;
     }
 
-    onTransitionEnd() {
-        if (this.visuallyHidden) {
-            this.displayToasty = 'none';
-            this.visuallyHidden = false;
+    onTransitionEndContactToasty() {
+        if (this.visuallyHiddenContactToasty) {
+            this.displayContactToasty = 'none';
+            this.displayBackground = 'none';
+            this.visuallyHiddenContactToasty = false;
+            this.visuallyHiddenBackground = false;
+        }
+    }
+
+    openMessageToasty() {
+        this.displayMessageToasty = 'initial';
+        this.displayBackground = 'initial';
+    }
+
+    closeMessageToasty() {
+        this.visuallyHiddenMessageToasty = true;
+        this.visuallyHiddenBackground = true;
+    }
+
+    onTransitionEndMessageToasty() {
+        if (this.visuallyHiddenMessageToasty) {
+            this.displayMessageToasty = 'none';
+            this.displayBackground = 'none';
+            this.visuallyHiddenMessageToasty = false;
+            this.visuallyHiddenBackground = false;
         }
     }
 }

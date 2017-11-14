@@ -1,16 +1,16 @@
 <div class="container-fluid main-container">
     <div class="fixed-contact hidden-xs">
-        <button class="callme-button" (click)="openToasty()">
+        <button class="callme-button" (click)="openContactToasty()">
             <span class="glyphicon glyphicon-earphone phone"></span>
         </button>
         <a [routerLink]="['/contact']" fragment="title" class="hireme">
             Hire me now
         </a>
     </div>
-    <div class="toasty-background" [class.visually-hidden-background]="visuallyHidden" [style.display]="displayToasty" (animationend)="onTransitionEnd()">
-        <div class="toasty toasty-hireme" [class.visually-hidden-toasty]="visuallyHidden">
+    <div class="toasty-background" [class.visually-hidden-background]="visuallyHiddenBackground" [style.display]="displayBackground">
+        <div class="toasty toasty-hireme" [class.visually-hidden-toasty]="visuallyHiddenContactToasty" [style.display]="displayContactToasty" (animationend)="onTransitionEndContactToasty()">
             <div class="toasty-hireme-header">
-                <button class="toasty-hireme-close-button" (click)="closeToasty()">
+                <button class="toasty-hireme-close-button" (click)="closeContactToasty()">
                     <span>x</span>
                 </button>
                 <p>Give Me a Call</p>
@@ -34,10 +34,8 @@
                 </div>
             </div>
         </div>
-    </div>
-    <div class="toasty-background">
-        <div class="toasty toasty-messagesent">
-            <button class="toasty-hireme-close-button" (click)="closeToasty()">
+        <div class="toasty toasty-messagesent" [class.visually-hidden-toasty]="visuallyHiddenMessageToasty" [style.display]="displayMessageToasty" (animationend)="onTransitionEndMessageToasty()">
+            <button class="toasty-hireme-close-button" (click)="closeMessageToasty()">
                 <span>x</span>
             </button>
             <p>Your message has been successfully sent.</p>
