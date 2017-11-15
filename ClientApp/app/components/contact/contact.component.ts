@@ -35,7 +35,7 @@ export class ContactComponent extends AutoScrollAfterLoading {
           this.contactService.emitMessageResponse('Your message has been successfully sent.');
         },
         error => {
-          this.contactService.emitMessageResponse('There was a problem while sending your message. Please try again.');
+          this.contactService.emitMessageResponse('There has been a problem while sending your message.');
         });
     }
   }
