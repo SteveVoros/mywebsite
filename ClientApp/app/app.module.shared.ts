@@ -9,6 +9,7 @@ import { SidebarComponent } from './components/sidebar/sidebar.component';
 import { HomeComponent } from './components/home/home.component';
 import { FetchDataComponent } from './components/fetchdata/fetchdata.component';
 import { ContactComponent } from './components/contact/contact.component';
+import { ContactService } from './components/services/ContactService';
 
 @NgModule({
     declarations: [
@@ -29,6 +30,9 @@ import { ContactComponent } from './components/contact/contact.component';
             { path: 'fetch-data', component: FetchDataComponent },
             { path: '**', redirectTo: 'home' }
         ])
+    ],
+    providers: [
+        ContactService
     ]
 })
 export class AppModuleShared {

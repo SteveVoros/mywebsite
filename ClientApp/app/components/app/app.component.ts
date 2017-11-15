@@ -1,11 +1,12 @@
 import {
     Component
 } from '@angular/core';
+import { ContactService } from '../services/ContactService';
 
 @Component({
     selector: 'app',
     templateUrl: './app.component.html',
-    styleUrls: ['./app.component.css'],
+    styleUrls: ['./app.component.css']
 })
 
 export class AppComponent {
@@ -15,6 +16,14 @@ export class AppComponent {
     visuallyHiddenBackground: boolean = false;
     visuallyHiddenContactToasty: boolean = false;
     visuallyHiddenMessageToasty: boolean = false;
+    message: string;
+
+    constructor(private contactService: ContactService) {
+        contactService.onContactResponse$.subscribe(message => {
+            console.log('event received');
+            this.openMessageToasty(message);
+        });
+    }
 
     openContactToasty() {
         this.displayContactToasty = 'initial';
@@ -35,9 +44,11 @@ export class AppComponent {
         }
     }
 
-    openMessageToasty() {
+    openMessageToasty(message: string) {
+        console.log('event received');
         this.displayMessageToasty = 'initial';
         this.displayBackground = 'initial';
+        this.message = message;
     }
 
     closeMessageToasty() {

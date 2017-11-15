@@ -3,6 +3,7 @@ import { Component, OnInit } from '@angular/core';
 import { AutoScrollAfterLoading } from '../shared/AutoScrollAfterLoading';
 import { ActivatedRoute } from '@angular/router';
 import { NgForm } from '@angular/forms/src/directives/ng_form';
+import { ContactService } from '../services/ContactService';
 
 @Component({
   selector: 'app-contact',
@@ -13,14 +14,14 @@ export class ContactComponent extends AutoScrollAfterLoading {
 
   private url = 'http://localhost:5000/api/sendmessage';
 
-  constructor(route: ActivatedRoute, private http: Http) {
+  constructor(route: ActivatedRoute, private http: Http, private contactService: ContactService) {
     super(route);
   }
 
   submit(contactForm: NgForm) {
     if (contactForm.valid) {
       let values = contactForm.value;
-      let post = { 
+      let post = {
         name: values.name,
         email: values.email,
         subject: values.subject,
@@ -28,8 +29,13 @@ export class ContactComponent extends AutoScrollAfterLoading {
       };
 
       this.http.post(this.url, post)
-        .subscribe(response => {
-          console.log(response.json());
+        .subscribe(
+        response => {
+          console.log('emitting message');
+          this.contactService.emitMessageResponse('Your message has been successfully sent.');
+        },
+        error => {
+          this.contactService.emitMessageResponse('There was a problem while sending your message. Please try again.');
         });
     }
   }
