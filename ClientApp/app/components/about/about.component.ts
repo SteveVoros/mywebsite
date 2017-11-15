@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Inject } from '@angular/core';
 import { AutoScrollAfterLoading } from '../shared/AutoScrollAfterLoading';
 import { ActivatedRoute } from '@angular/router';
 
@@ -7,9 +7,14 @@ import { ActivatedRoute } from '@angular/router';
   templateUrl: './about.component.html',
   styleUrls: ['../shared/shared.css', './about.component.css']
 })
-export class AboutComponent extends AutoScrollAfterLoading {
 
-  constructor(route: ActivatedRoute) {
+export class AboutComponent extends AutoScrollAfterLoading {
+  baseUrl: string;
+  firstImgUrl: string;
+
+  constructor(route: ActivatedRoute, @Inject('BASE_URL') baseUrl: string) {
     super(route);
+    this.baseUrl = baseUrl;
+    this.firstImgUrl = this.baseUrl + 'img/write-593333_640.jpg';
   }
 }

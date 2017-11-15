@@ -1,5 +1,5 @@
 import { Http } from '@angular/http';
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Inject } from '@angular/core';
 import { AutoScrollAfterLoading } from '../shared/AutoScrollAfterLoading';
 import { ActivatedRoute } from '@angular/router';
 import { NgForm } from '@angular/forms/src/directives/ng_form';
@@ -11,11 +11,14 @@ import { ContactService } from '../services/ContactService';
   styleUrls: ['../shared/shared.css', './contact.component.css']
 })
 export class ContactComponent extends AutoScrollAfterLoading {
+  
+  private baseUrl: string;
+  private url: string;
 
-  private url = 'http://localhost:5000/api/sendmessage';
-
-  constructor(route: ActivatedRoute, private http: Http, private contactService: ContactService) {
+  constructor(route: ActivatedRoute, private http: Http, private contactService: ContactService, @Inject('BASE_URL') baseUrl: string) {
     super(route);
+    this.baseUrl = baseUrl;
+    this.url = this.baseUrl + 'api/sendmessage';
   }
 
   submit(contactForm: NgForm) {
