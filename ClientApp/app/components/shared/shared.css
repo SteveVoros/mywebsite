@@ -21,17 +21,18 @@
     padding: 0px 0px 30px 0px;
 }
 
+.content-padding {
+    padding: 0 0 0 20px;
+}
+
+.content-paragraph {
+    padding: 15% 0 15% 0;
+    text-align: justify;
+}
+
 h2 {
     padding: 0 0 30px 0;
 }
-
-p {
-    /* letter-spacing: 1.3px; */
-    text-align: justify;
-    margin-left: 100px;
-    margin-right: 100px;
-}
-
 @media (min-width: 480px) {
     #title {
         text-align: initial;
@@ -42,11 +43,9 @@ p {
     .content {
         font-size: 21px;
     }
-
     #title {
         font-size: 48px;
     }
-
     .content-title {
         padding: 0px 0px 80px 0px;
     }

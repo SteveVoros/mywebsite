@@ -15,6 +15,6 @@ export class AboutComponent extends AutoScrollAfterLoading {
   constructor(route: ActivatedRoute, @Inject('BASE_URL') baseUrl: string) {
     super(route);
     this.baseUrl = baseUrl;
-    this.firstImgUrl = this.baseUrl + 'img/write-593333_640.jpg';
+    this.firstImgUrl = this.baseUrl + 'img/laptop-01_640.jpg';
   }
 }
