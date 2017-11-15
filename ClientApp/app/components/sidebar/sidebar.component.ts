@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Inject } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 
 @Component({
@@ -7,7 +7,13 @@ import { ActivatedRoute } from '@angular/router';
     styleUrls: ['./sidebar.component.css']
 })
 export class SidebarComponent {
-    constructor( private route: ActivatedRoute) {}
+    baseUrl: string;
+    profilePicUrl: string;
+
+    constructor( private route: ActivatedRoute, @Inject('BASE_URL') baseUrl: string) {
+        this.baseUrl = baseUrl;
+        this.profilePicUrl = this.baseUrl + "img/profile_pic.jpg";
+    }
 
     onAnchorClick() {
         this.route.fragment.subscribe(f => {
