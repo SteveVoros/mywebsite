@@ -7,10 +7,10 @@
             Hire me now
         </a>
     </div>
-    <div class="toasty-background" [class.visually-hidden-background]="visuallyHiddenBackground" [style.display]="displayBackground">
-        <div class="toasty toasty-hireme" [class.visually-hidden-toasty]="visuallyHiddenContactToasty" [style.display]="displayContactToasty" (animationend)="onTransitionEndContactToasty()">
+    <div class="toasty-background" [class.visually-hidden-background]="visuallyHiddenBackground" [style.display]="displayBackground" (click)="closeToasty()">
+        <div class="toasty toasty-hireme" [class.visually-hidden-toasty]="visuallyHiddenContactToasty" [style.display]="displayContactToasty" (click)="$event.stopPropagation();" (animationend)="onTransitionEndContactToasty()">
             <div class="toasty-hireme-header">
-                <button class="toasty-close-button" (click)="closeContactToasty()">
+                <button class="toasty-close-button" (click)="closeToasty()">
                     <span>x</span>
                 </button>
                 <p>Give Me a Call</p>
@@ -34,8 +34,8 @@
                 </div>
             </div>
         </div>
-        <div class="toasty toasty-messagesent" [class.visually-hidden-toasty]="visuallyHiddenMessageToasty" [style.display]="displayMessageToasty" (animationend)="onTransitionEndMessageToasty()">
-            <button class="toasty-close-button" (click)="closeMessageToasty()">
+        <div class="toasty toasty-messagesent" [class.visually-hidden-toasty]="visuallyHiddenMessageToasty" [style.display]="displayMessageToasty" (click)="$event.stopPropagation();" (animationend)="onTransitionEndMessageToasty()">
+            <button class="toasty-close-button" (click)="closeToasty()">
                 <span>x</span>
             </button>
             <p>{{ message }}</p>

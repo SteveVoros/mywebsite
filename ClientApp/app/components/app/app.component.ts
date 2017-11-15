@@ -20,7 +20,6 @@ export class AppComponent {
 
     constructor(private contactService: ContactService) {
         contactService.onContactResponse$.subscribe(message => {
-            console.log('event received');
             this.openMessageToasty(message);
         });
     }
@@ -30,8 +29,11 @@ export class AppComponent {
         this.displayBackground = 'initial';
     }
 
-    closeContactToasty() {
-        this.visuallyHiddenContactToasty = true;
+    closeToasty() {
+        if (this.displayContactToasty == 'initial')
+            this.visuallyHiddenContactToasty = true;
+        else
+            this.visuallyHiddenMessageToasty = true;
         this.visuallyHiddenBackground = true;
     }
 
@@ -45,15 +47,9 @@ export class AppComponent {
     }
 
     openMessageToasty(message: string) {
-        console.log('event received');
         this.displayMessageToasty = 'initial';
         this.displayBackground = 'initial';
         this.message = message;
-    }
-
-    closeMessageToasty() {
-        this.visuallyHiddenMessageToasty = true;
-        this.visuallyHiddenBackground = true;
     }
 
     onTransitionEndMessageToasty() {
@@ -63,5 +59,9 @@ export class AppComponent {
             this.visuallyHiddenMessageToasty = false;
             this.visuallyHiddenBackground = false;
         }
+    }
+
+    closeBackground() {
+
     }
 }
