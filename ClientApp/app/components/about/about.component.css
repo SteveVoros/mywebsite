@@ -17,5 +17,5 @@
 .techlogo {
     width: 100px;
     height: 100px;
-    overflow: hidden;
+    margin: 0 10px;
 }

@@ -21,7 +21,7 @@ export class AboutComponent extends AutoScrollAfterLoading {
     super(route);
     this.baseUrl = baseUrl;
     this.firstImgUrl = this.baseUrl + 'img/laptop-01_640.jpg';
-    this.techLogoUrl01 = this.baseUrl + 'img/msasp.png';
+    this.techLogoUrl01 = this.baseUrl + 'img/angular.png';
     this.techLogoUrl02 = this.baseUrl + 'img/aspnetcore.jpg';
     this.techLogoUrl03 = this.baseUrl + 'img/csharp.png';
     this.techLogoUrl04 = this.baseUrl + 'img/netcore.svg';
