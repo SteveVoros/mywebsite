@@ -14,17 +14,44 @@
     <h2 class="text-center">Technologies</h2>
     <div class="row techlogo-container">
       <div class="col-lg-6 text-center techlogo-subcontainer">
-        <img [src]="techLogoUrl01" alt="C# Logo" class="techlogo">
-        <img [src]="techLogoUrl02" alt=".NET Core Logo" class="techlogo">
-        <img [src]="techLogoUrl03" alt="ASP.NET Core Logo" class="techlogo">
-        <img [src]="techLogoUrl04" alt="Azure Logo" class="techlogo">
-        <img [src]="techLogoUrl05" alt="Angular Logo" class="techlogo">
+        <div>
+          <img [src]="techLogoUrl01" alt="C# Logo" class="techlogo" (mouseover)="techLogoHover()">
+          <div class="techlogo-infobox">C#</div>
+        </div>
+        <div>
+          <img [src]="techLogoUrl02" alt=".NET Core Logo" class="techlogo">
+          <div class="techlogo-infobox">.NET Core</div>
+        </div>
+        <div>
+          <img [src]="techLogoUrl03" alt="ASP.NET Core Logo" class="techlogo">
+          <div class="techlogo-infobox">ASP.NET Core</div>
+        </div>
+        <div>
+          <img [src]="techLogoUrl04" alt="Azure Logo" class="techlogo">
+          <div class="techlogo-infobox">Azure</div>
+        </div>
+        <div>
+          <img [src]="techLogoUrl05" alt="Angular Logo" class="techlogo">
+          <div class="techlogo-infobox">Angular</div>
+        </div>
       </div>
       <div class="col-lg-6 text-center techlogo-subcontainer">
-        <img [src]="techLogoUrl06" alt="HTML5 Logo" class="techlogo">
-        <img [src]="techLogoUrl07" alt="Javascript Logo" class="techlogo">
-        <img [src]="techLogoUrl08" alt="CSS3 Logo" class="techlogo">
-        <img [src]="techLogoUrl09" alt="SQL Logo" class="techlogo">
+        <div>
+          <img [src]="techLogoUrl06" alt="HTML5 Logo" class="techlogo">
+          <div class="techlogo-infobox">HTML5</div>
+        </div>
+        <div>
+          <img [src]="techLogoUrl07" alt="JavaScript Logo" class="techlogo">
+          <div class="techlogo-infobox">JavaScript</div>
+        </div>
+        <div>
+          <img [src]="techLogoUrl08" alt="CSS3 Logo" class="techlogo">
+          <div class="techlogo-infobox">CSS3</div>
+        </div>
+        <div>
+          <img [src]="techLogoUrl09" alt="SQL Logo" class="techlogo">
+          <div class="techlogo-infobox">SQL</div>
+        </div>
       </div>
     </div>
     <div class="content-paragraph">

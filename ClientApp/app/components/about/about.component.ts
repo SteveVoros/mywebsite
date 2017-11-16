@@ -35,4 +35,8 @@ export class AboutComponent extends AutoScrollAfterLoading {
     this.techLogoUrl08 = this.baseUrl + 'img/css3.png';
     this.techLogoUrl09 = this.baseUrl + 'img/sql.png';
   }
+
+  techLogoHover() {
+    console.log('event fired');
+  }
 }

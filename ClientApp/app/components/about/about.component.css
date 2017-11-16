@@ -20,6 +20,27 @@
     transform: scale(1.2, 1.2);
 }
 
+.techlogo-infobox {
+    display: none;
+    width: 110px;
+    height: 60px;
+    background-color: rgba(236, 8, 92, 0.959);
+    color: white;
+    font-size: 14px;
+    position: relative;
+    top: -110px;
+    left: 40px;
+    border-radius: 50px;
+    line-height: 55px;
+    margin: 0;
+    padding: 0;
+    border: 1px solid white;
+}
+
+.techlogo:hover + .techlogo-infobox {
+    display: block;
+}
+
 @media(min-width: 576px) {
     .techlogo {
         height: 60px;
