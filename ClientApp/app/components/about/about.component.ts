@@ -16,15 +16,23 @@ export class AboutComponent extends AutoScrollAfterLoading {
   techLogoUrl03: string;
   techLogoUrl04: string;
   techLogoUrl05: string;
+  techLogoUrl06: string;
+  techLogoUrl07: string;
+  techLogoUrl08: string;
+  techLogoUrl09: string;
 
   constructor(route: ActivatedRoute, @Inject('BASE_URL') baseUrl: string) {
     super(route);
     this.baseUrl = baseUrl;
     this.firstImgUrl = this.baseUrl + 'img/laptop-01_640.jpg';
-    this.techLogoUrl01 = this.baseUrl + 'img/angular.png';
-    this.techLogoUrl02 = this.baseUrl + 'img/aspnetcore.jpg';
-    this.techLogoUrl03 = this.baseUrl + 'img/csharp.png';
-    this.techLogoUrl04 = this.baseUrl + 'img/netcore.svg';
-    this.techLogoUrl05 = this.baseUrl + 'img/azure.png';
+    this.techLogoUrl01 = this.baseUrl + 'img/aspnetcore.jpg';
+    this.techLogoUrl02 = this.baseUrl + 'img/csharp.png';
+    this.techLogoUrl03 = this.baseUrl + 'img/netcore.svg';
+    this.techLogoUrl04 = this.baseUrl + 'img/azure.png';
+    this.techLogoUrl05 = this.baseUrl + 'img/angular.png';
+    this.techLogoUrl06 = this.baseUrl + 'img/html5.png';
+    this.techLogoUrl07 = this.baseUrl + 'img/javascript.png';
+    this.techLogoUrl08 = this.baseUrl + 'img/css3.png';
+    this.techLogoUrl09 = this.baseUrl + 'img/sql.png';
   }
 }
