@@ -26,8 +26,13 @@
 }
 
 .content-paragraph {
-    padding: 15% 0 15% 0;
+    padding: 10% 0 10% 0;
     text-align: justify;
+    margin: 0 10% 0 10%;
+}
+
+.first-paragraph {
+    padding: 0 0 40px 0;
 }
 
 .separator {
@@ -35,8 +40,8 @@
     width: 210px;
     margin-right: auto;
     margin-left: auto;
-    margin-top: 45px;
-    margin-bottom: 45px;
+    margin-top: 60px;
+    margin-bottom: 50px;
     padding: 0;
 }
 
@@ -63,12 +68,24 @@ h2 {
     .separator {
         width: 230px;
         margin-top: 70px;
-        margin-bottom: 70px;
+        margin-bottom: 50px;
     }
+    /* .content-paragraph {
+        padding: 40px 0 40px 0;
+        margin: 0 100px 0 100px;
+    } */
 }
 
 @media (min-width: 1200px) {
     .separator {
         width: 320px;
+        margin-top: 90px;
+        margin-bottom: 70px;
+    }
+
+    .content-paragraph {
+        padding: 15% 0 15% 0;
+        margin: initial;
+        text-align: justify;
     }
 }
