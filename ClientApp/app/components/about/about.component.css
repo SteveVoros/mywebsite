@@ -1,21 +1,36 @@
 .techlogo-container {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    align-items: center;
-    align-content: center;
-    /* height: 100px; */
     padding: 0;
-    margin: 10px 10px;
+    margin: auto;
+    width: 100%;
+}
+
+.techlogo-subcontainer {
+    display: flex;
+    justify-content: center;
 }
 
 .techlogo {
     width: auto;
-    height: 60px;
+    height: 50px;
     margin: 10px 10px;
     transition: all 0.5s;
 }
 
 .techlogo:hover {
     transform: scale(1.2, 1.2);
+}
+
+@media(min-width: 576px) {
+    .techlogo {
+        height: 60px;
+    }
+}
+
+@media(min-width: 1200px) {
+    /* .techlogo-subcontainer {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        align-content: center;
+    } */
 }
