@@ -29,14 +29,14 @@
     padding: 20px 0 20px 0;
     text-align: justify;
     margin: auto;
-    width: 450px;
+    width: 300px;
 }
 
 .first-paragraph {
     padding: 0 0 40px 0;
 }
 
-.img-right-float {
+.img-lg-right-float {
     width: 300px;
     height: auto;
 }
@@ -76,11 +76,10 @@ h2 {
         margin-top: 70px;
         margin-bottom: 50px;
     }
-    /* .content-paragraph {
-        padding: 40px 0 40px 0;
-        margin: 0 100px 0 100px;
-    } */
-    .img-right-float {
+    .content-paragraph {
+        width: 400px;
+    }
+    .img-lg-right-float {
         width: 400px;
         height: auto;
     }
