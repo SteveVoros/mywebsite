@@ -3,16 +3,6 @@
     padding: 10px 0 10px 0;
 }
 
-.separator {
-    border-bottom: 3px solid #EC0856;
-    width: 210px;
-    margin-right: auto;
-    margin-left: auto;
-    margin-top: 45px;
-    margin-bottom: 45px;
-    padding: 0;
-}
-
 .contact-form {
     width: 270px;
     margin-right: auto;
@@ -60,12 +50,6 @@ label {
         padding: 20px 0 20px 0;
     }
 
-    .separator {
-        width: 230px;
-        margin-top: 50px;
-        margin-bottom: 50px;
-    }
-
     .contact-form {
         width: 350px;
     }
@@ -76,10 +60,6 @@ label {
 }
 
 @media (min-width: 1200px) {
-    .separator {
-        width: 320px;
-    }
-
     .contact-form {
         width: 400px;
     }
