@@ -21,15 +21,11 @@
     padding: 0px 0px 30px 0px;
 }
 
-.content-padding {
-    padding: 0 10px;
-}
-
 .content-paragraph {
     padding: 20px 0 20px 0;
     text-align: justify;
     margin: auto;
-    width: 300px;
+    width: 340px;
 }
 
 .first-paragraph {
@@ -59,6 +55,12 @@ h2 {
     #title {
         text-align: initial;
     }
+    .content {
+        font-size: 17px;
+    }
+    .content-paragraph {
+        width: 370px;
+    }
 }
 
 @media (min-width: 576px) {
@@ -77,7 +79,7 @@ h2 {
         margin-bottom: 50px;
     }
     .content-paragraph {
-        width: 400px;
+        width: 450px;
     }
     .img-lg-right-float {
         width: 400px;
