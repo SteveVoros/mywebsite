@@ -26,13 +26,18 @@
 }
 
 .content-paragraph {
-    padding: 10% 0 10% 0;
+    padding: 20px 0 20px 0;
     text-align: justify;
-    margin: 0 10% 0 10%;
+    margin: 0;
 }
 
 .first-paragraph {
     padding: 0 0 40px 0;
+}
+
+.img-right-float {
+    width: 300px;
+    height: auto;
 }
 
 .separator {
@@ -74,6 +79,10 @@ h2 {
         padding: 40px 0 40px 0;
         margin: 0 100px 0 100px;
     } */
+    .img-right-float {
+        width: 400px;
+        height: auto;
+    }
 }
 
 @media (min-width: 1200px) {
