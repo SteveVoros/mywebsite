@@ -13,4 +13,9 @@
     width: auto;
     height: 60px;
     margin: 10px 10px;
+    transition: all 0.5s;
+}
+
+.techlogo:hover {
+    transform: scale(1.2, 1.2);
 }

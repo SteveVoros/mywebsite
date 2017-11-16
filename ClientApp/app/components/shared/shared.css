@@ -22,13 +22,14 @@
 }
 
 .content-padding {
-    padding: 0 0 0 20px;
+    padding: 0 10px;
 }
 
 .content-paragraph {
     padding: 20px 0 20px 0;
     text-align: justify;
-    margin: 0;
+    margin: auto;
+    width: 450px;
 }
 
 .first-paragraph {
@@ -84,6 +85,11 @@ h2 {
         height: auto;
     }
 }
+@media (min-width: 768px) {
+    .content-padding {
+        padding: 0 0 0 20px;
+    }
+}
 
 @media (min-width: 1200px) {
     .separator {
@@ -93,8 +99,8 @@ h2 {
     }
     .content-paragraph {
         padding: 15% 0 15% 0;
-        margin: initial;
-        text-align: justify;
+        /* margin: initial; */
+        width: initial;
     }
     h2 {
         padding: 0 0 40px 0;
