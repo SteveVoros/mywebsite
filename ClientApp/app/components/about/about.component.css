@@ -40,10 +40,13 @@
     padding: 0 10px;
     border: 1px solid white;
     z-index: 3;
+    opacity: 0;
+    transition: all 0.3s;
 }
 
 .techlogo:hover + .techlogo-infobox {
     visibility: visible;
+    opacity: 1;
 }
 
 @media(min-width: 576px) {
