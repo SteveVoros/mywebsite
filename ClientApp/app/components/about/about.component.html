@@ -56,10 +56,11 @@
     </div>
     <p class="separator"></p>
     <h2 class="text-center">Certifications</h2>
+    <p class="text-center">Microsoft Certification ID</p>
+    <p class="text-center">14227462</p>
     <div class="badge-container">
-      <img [src]="certBadgeUrl01"  alt="Microsoft Certified Solutions Expert Badge: Cloud Platform and Infrastructure" class="badge">
-      <img [src]="certBadgeUrl02"  alt="Microsoft Certificate Solutions Developer Badge: App Builder" class="badge">
-      <p>Download Certificates</p>
+      <a [href]="certDownloadUrl01" download><img [src]="certBadgeUrl01"  alt="Microsoft Certified Solutions Expert Badge: Cloud Platform and Infrastructure" class="badge"></a>
+      <a [href]="certDownloadUrl02" download><img [src]="certBadgeUrl02"  alt="Microsoft Certificate Solutions Developer Badge: App Builder" class="badge"></a>
     </div>
     <!-- <div class="content-paragraph">
       <p>Regardless of your project's size, I can help you tackle challenges in front-end and back-end development using Angular

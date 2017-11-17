@@ -24,6 +24,9 @@ export class AboutComponent extends AutoScrollAfterLoading {
   certBadgeUrl01: string;
   certBadgeUrl02: string;
 
+  certDownloadUrl01: string;
+  certDownloadUrl02: string;
+
   constructor(route: ActivatedRoute, @Inject('BASE_URL') baseUrl: string) {
     super(route);
     this.baseUrl = baseUrl;
@@ -40,5 +43,8 @@ export class AboutComponent extends AutoScrollAfterLoading {
 
     this.certBadgeUrl01 = this.baseUrl + 'img/badge_MCSE.png';
     this.certBadgeUrl02 = this.baseUrl + 'img/badge_MCSD.png';
+
+    this.certDownloadUrl01 = this.baseUrl + 'files/certificate_MCSE.pdf';
+    this.certDownloadUrl02 = this.baseUrl + 'files/certificate_MCSD.pdf';
   }
 }
