@@ -23,16 +23,16 @@
 .techlogo-infobox {
     visibility: hidden;
     /* display: inline-block; */
-    width: 100px;
-    height: 40px;
+    width: 80px;
+    height: 30px;
     background-color: rgba(236, 8, 92, 0.959);
     color: white;
-    font-size: 14px;
+    font-size: 12px;
+    line-height: 30px;
     position: relative;
     bottom: 90%;
     left: 50%;
     border-radius: 50px;
-    line-height: 40px;
     margin-left: -50px;
     /* margin-bottom: -20px; */
     /* margin-right: -55px; */
@@ -50,6 +50,12 @@
     .techlogo {
         height: 60px;
         margin: 10px 10px;
+    }
+    .techlogo-infobox {
+        width: 100px;
+        height: 40px;
+        font-size: 14px;
+        line-height: 40px;
     }
 }
 
