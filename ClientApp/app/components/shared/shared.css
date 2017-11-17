@@ -120,6 +120,13 @@ h3 {
     .content-paragraph {
         width: initial;
     }
+    .content-paragraph-wide {
+        width: 90%;
+    }
+    .padding-lg {
+        padding-top: 70px;
+        padding-bottom: 70px;
+    }
     h2 {
         padding: 0 0 50px 0;
     }
