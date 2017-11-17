@@ -21,9 +21,10 @@
 }
 
 .techlogo-infobox {
-    display: none;
+    visibility: hidden;
+    /* display: inline-block; */
     width: 110px;
-    height: 60px;
+    height: 40px;
     background-color: rgba(236, 8, 92, 0.959);
     color: white;
     font-size: 14px;
@@ -31,14 +32,18 @@
     top: -110px;
     left: 40px;
     border-radius: 50px;
-    line-height: 55px;
-    margin: 0;
-    padding: 0;
+    line-height: 40px;
+    margin-left: -55px;
+    margin-bottom: -20px;
+    margin-right: -55px;
+    margin-top: -20px;
+    padding: 0 10px;
     border: 1px solid white;
+    z-index: 3;
 }
 
 .techlogo:hover + .techlogo-infobox {
-    display: block;
+    visibility: visible;
 }
 
 @media(min-width: 576px) {
