@@ -10,7 +10,9 @@ import { ActivatedRoute } from '@angular/router';
 
 export class AboutComponent extends AutoScrollAfterLoading {
   baseUrl: string;
-  firstImgUrl: string;
+  img01Url: string;
+  img02Url: string;
+
   techLogoUrl01: string;
   techLogoUrl02: string;
   techLogoUrl03: string;
@@ -30,7 +32,9 @@ export class AboutComponent extends AutoScrollAfterLoading {
   constructor(route: ActivatedRoute, @Inject('BASE_URL') baseUrl: string) {
     super(route);
     this.baseUrl = baseUrl;
-    this.firstImgUrl = this.baseUrl + 'img/laptop-01_640.jpg';
+    this.img01Url = this.baseUrl + 'img/laptop-01_640.jpg';
+    this.img02Url = this.baseUrl + 'img/consulting.jpg';
+
     this.techLogoUrl01 = this.baseUrl + 'img/csharp.png';
     this.techLogoUrl02 = this.baseUrl + 'img/netcore.svg';
     this.techLogoUrl03 = this.baseUrl + 'img/aspnetcore.jpg';
