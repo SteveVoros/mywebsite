@@ -33,7 +33,7 @@
 }
 
 .first-paragraph {
-    padding: 0 0 40px 0;
+    padding: 0 0 20px 0;
 }
 
 .img-lg {
@@ -93,6 +93,9 @@ h3 {
     .content-paragraph {
         width: 450px;
     }
+    .content-paragraph-wide {
+        width: 90%;
+    }
     .img-lg {
         width: 400px;
         height: auto;
@@ -119,7 +122,6 @@ h3 {
     }
     .content-paragraph {
         padding: 15% 0 15% 0;
-        /* margin: initial; */
         width: initial;
     }
     h2 {
