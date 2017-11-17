@@ -29,14 +29,14 @@
     color: white;
     font-size: 14px;
     position: relative;
-    top: -110px;
-    left: 40px;
+    bottom: 100%;
+    left: 50%;
     border-radius: 50px;
     line-height: 40px;
     margin-left: -55px;
-    margin-bottom: -20px;
-    margin-right: -55px;
-    margin-top: -20px;
+    /* margin-bottom: -20px; */
+    /* margin-right: -55px; */
+    /* margin-top: -20px; */
     padding: 0 10px;
     border: 1px solid white;
     z-index: 3;
