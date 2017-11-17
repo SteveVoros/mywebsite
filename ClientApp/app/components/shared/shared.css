@@ -7,13 +7,11 @@
 }
 
 #title {
-    /* font-family: 'Open Sans', helvetica, arial, sans-serif; */
     font-size: 36px;
     font-weight: 400;
     line-height: 1.2em;
     letter-spacing: 2px;
     text-align: center;
-    /* padding: 0px 0px 0px 0px; */
     border: 0;
 }
 
@@ -22,18 +20,14 @@
 }
 
 .content-paragraph {
-    padding: 20px 0 20px 0;
+    padding: 10px 0 10px 0;
     text-align: justify;
     margin: auto;
     width: 340px;
 }
 
-.row-padding {
-    /* padding-bottom: 50px; */
-}
-
 .first-paragraph {
-    padding: 0 0 20px 0;
+    padding-top: 0;
 }
 
 .img-lg {
@@ -52,7 +46,7 @@
 }
 
 h2 {
-    padding: 0 0 30px 0;
+    padding: 0 0 40px 0;
     letter-spacing: 1px;
 }
 
@@ -88,10 +82,11 @@ h3 {
     .separator {
         width: 230px;
         margin-top: 70px;
-        margin-bottom: 50px;
+        margin-bottom: 60px;
     }
     .content-paragraph {
         width: 450px;
+        padding: 15px 0 15px 0;
     }
     .content-paragraph-wide {
         width: 90%;
@@ -99,15 +94,17 @@ h3 {
     .img-lg {
         width: 400px;
         height: auto;
+        padding-top: 10px;
+        padding-bottom: 10px;
     }
     h2 {
-        padding: 0 0 50px 0;
         font-size: 1.6em;
     }
     h3 {
         font-size: 22px;
     }
 }
+
 @media (min-width: 768px) {
     .content-padding {
         padding: 0 0 0 20px;
@@ -118,13 +115,12 @@ h3 {
     .separator {
         width: 320px;
         margin-top: 90px;
-        margin-bottom: 70px;
+        margin-bottom: 80px;
     }
     .content-paragraph {
-        padding: 15% 0 15% 0;
         width: initial;
     }
     h2 {
-        padding: 0 0 60px 0;
+        padding: 0 0 50px 0;
     }
 }

@@ -45,6 +45,8 @@
 
 .certid-text {
     letter-spacing: 0.001em;
+    font-weight: 600;
+    padding-top: 10px;
 }
 
 .techlogo:hover + .techlogo-infobox {
