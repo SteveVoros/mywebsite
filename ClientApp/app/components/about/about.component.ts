@@ -21,6 +21,9 @@ export class AboutComponent extends AutoScrollAfterLoading {
   techLogoUrl08: string;
   techLogoUrl09: string;
 
+  certBadgeUrl01: string;
+  certBadgeUrl02: string;
+
   constructor(route: ActivatedRoute, @Inject('BASE_URL') baseUrl: string) {
     super(route);
     this.baseUrl = baseUrl;
@@ -34,5 +37,8 @@ export class AboutComponent extends AutoScrollAfterLoading {
     this.techLogoUrl07 = this.baseUrl + 'img/javascript.png';
     this.techLogoUrl08 = this.baseUrl + 'img/css3.png';
     this.techLogoUrl09 = this.baseUrl + 'img/sql.png';
+
+    this.certBadgeUrl01 = this.baseUrl + 'img/badge_MCSE.png';
+    this.certBadgeUrl02 = this.baseUrl + 'img/badge_MCSD.png';
   }
 }

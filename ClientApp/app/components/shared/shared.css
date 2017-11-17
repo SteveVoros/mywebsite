@@ -85,6 +85,9 @@ h2 {
         width: 400px;
         height: auto;
     }
+    h2 {
+        padding: 0 0 50px 0;
+    }
 }
 @media (min-width: 768px) {
     .content-padding {
@@ -104,6 +107,6 @@ h2 {
         width: initial;
     }
     h2 {
-        padding: 0 0 40px 0;
+        padding: 0 0 60px 0;
     }
 }

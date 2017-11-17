@@ -22,23 +22,22 @@
 
 .techlogo-infobox {
     visibility: hidden;
-    /* display: inline-block; */
-    width: 80px;
+    width: 70px;
     height: 30px;
-    background-color: rgba(236, 8, 92, 0.959);
+    background-color: rgba(235, 0, 90, 0.897);
+    /* rgba(236, 8, 92, 0.959); */
+    /* rgba(104, 98, 100, 0.877); */
     color: white;
     font-size: 12px;
     line-height: 30px;
     position: relative;
     bottom: 90%;
-    left: 50%;
+    left: 45px;
     border-radius: 50px;
     margin-left: -50px;
-    /* margin-bottom: -20px; */
-    /* margin-right: -55px; */
     margin-top: -40px;
-    padding: 0 10px;
-    border: 1px solid white;
+    padding: 0;
+    /* border: 1px solid white; */
     z-index: 3;
     opacity: 0;
     transition: all 0.3s;
@@ -49,18 +48,43 @@
     opacity: 1;
 }
 
+.badge-container {
+    /* margin: auto; */
+    text-align: center;
+}
+
+.badge {
+    display: initial;
+    background-color: white;
+    width: 120px;
+    height: auto;
+    margin: 0 20px;
+}
+
 @media(min-width: 576px) {
     .techlogo {
         height: 60px;
         margin: 10px 10px;
     }
     .techlogo-infobox {
-        width: 100px;
+        width: 80px;
         height: 40px;
+        left: 60%;
         font-size: 14px;
         line-height: 40px;
+    }
+    .badge {
+        width: 150px;
+        margin: 0 30px;
     }
 }
 
 @media(min-width: 1200px) {
+    .techlogo {
+        height: 70px;
+    }
+    .badge {
+        width: 180px;
+        margin: 0 40px;
+    }
 }
