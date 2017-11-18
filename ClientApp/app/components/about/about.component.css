@@ -113,6 +113,7 @@
 @media(min-width: 1200px) {
     .techlogo {
         height: 70px;
+        margin: 10px 15px;
     }
     .badge {
         width: 180px;
