@@ -26,6 +26,7 @@ export class AboutComponent extends AutoScrollAfterLoading {
   employerLogoUrl01: string;
   employerLogoUrl02: string;
   employerLogoUrl03: string;
+  employerLogoUrl04: string;
 
   certBadgeUrl01: string;
   certBadgeUrl02: string;
@@ -57,6 +58,7 @@ export class AboutComponent extends AutoScrollAfterLoading {
     this.employerLogoUrl01 = this.baseUrl + 'img/audi.png';
     this.employerLogoUrl02 = this.baseUrl + 'img/volkswagen.png';
     this.employerLogoUrl03 = this.baseUrl + 'img/oneremains.png';
+    this.employerLogoUrl04 = this.baseUrl + 'img/freelancer.svg';
 
     this.certBadgeUrl01 = this.baseUrl + 'img/badge_MCSE.png';
     this.certBadgeUrl02 = this.baseUrl + 'img/badge_MCSD.png';
