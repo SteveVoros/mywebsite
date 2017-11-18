@@ -72,6 +72,24 @@
     transform: scale(1.1, 1.1);
 }
 
+.job-description-container {
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    padding: 30px;
+    width: 500px;
+    height: 300px;
+}
+
+.employer-logo {
+    width: 30%;
+}
+
+.job-description {
+    width: 60%;
+    text-align: justify;
+}
+
 #introduction {
     width: 340px;
 }
