@@ -54,8 +54,8 @@
 .selector-container {
     display: flex;
     justify-content: center;
-    margin-top: 30px;
-    margin-bottom: 20px;
+    margin-top: 50px;
+    margin-bottom: 30px;
 }
 
 .selector-button {
@@ -85,9 +85,19 @@
     background-color: transparent;
 }
 
-.selector-button:focus,
-.selector-button:active {
-    outline: none;
+.selector-button:focus {
+    background-color: #EC0856;
+    color: white;
+    border-color: #EC0856;
+}
+
+.selector-button-selected {
+    background-color: #EC0856;
+    color: white;
+    border-color: #EC0856;
+}
+
+.selector-button-selected:hover {
     background-color: #EC0856;
     color: white;
     border-color: #EC0856;
