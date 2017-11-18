@@ -76,18 +76,22 @@
     display: flex;
     justify-content: space-between;
     margin: auto;
-    padding: 30px;
-    width: 500px;
-    height: 300px;
+    padding-top: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+    width: 700px;
 }
 
 .employer-logo {
-    width: 30%;
+    margin: 0 40px 0 0;
+    width: 200px;
+    height: 100px;
 }
 
 .job-description {
-    width: 60%;
+    margin: 0 0 0 40px;
     text-align: justify;
+    font-size: 17px;
 }
 
 #introduction {
