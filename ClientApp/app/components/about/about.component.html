@@ -91,15 +91,27 @@
       of multiple contractors. There, I needed to learn about the importance of flexibility, which I consider one of my greatest
       strengths even today.</p>
     <div class="selector-container">
-      <button #selector01 class="selector-button selector-button-selected" (click)="selectorClicked(selector01, [selector02, selector03, selector04])">Audi</button>
-      <button #selector02 class="selector-button" (click)="selectorClicked(selector02, [selector01, selector03, selector04])">Volkswagen</button>
-      <button #selector03 class="selector-button" (click)="selectorClicked(selector03, [selector01, selector02, selector04])">oneremains</button>
-      <button #selector04 class="selector-button" (click)="selectorClicked(selector04, [selector01, selector02, selector03])">Freelance</button>
+      <button id="selector01" #selector01 class="selector-button selector-button-selected" (click)="selectorClicked(selector01, [selector02, selector03, selector04])">Audi</button>
+      <button id="selector02" #selector02 class="selector-button" (click)="selectorClicked(selector02, [selector01, selector03, selector04])">Volkswagen</button>
+      <button id="selector03" #selector03 class="selector-button" (click)="selectorClicked(selector03, [selector01, selector02, selector04])">oneremains</button>
+      <button id="selector04" #selector04 class="selector-button" (click)="selectorClicked(selector04, [selector01, selector02, selector03])">Freelance</button>
     </div>
     <div class="separator-grey"></div>
-    <div class="job-description-container">
-      <img [src]="employerLogoUrl01" alt="Audi-logo" class="employer-logo">
-      <p class="job-description">adsf adsfsd kflahd asdf fdakshflksadf kfdlahsklfhal sd slkfl dkasdf daskfhlakdshflk ahsldfheoinoavn oaiv kladhsv vkdslk vkhsdl ni orboivi orbo bv ovi bob oiab h asdf</p>
+    <div class="job-description-container" [style.display]="displayJobDescription01">
+      <img [src]="employerLogoUrl01" alt="Audi Logo" class="employer-logo">
+      <p class="job-description">adsf adsfsd kflahd asdf fdakshflksadf kfdlahsklfhal sd asdf asdklfh lksaflkal kf ienali nfaie blgka kleahkl  slkfl dkasdf daskfhlakdshflk ahsldfheoinoavn oaiv kladhsv vkdslk vkhsdl ni orboivi orbo bv ovi bob oiab h asdf</p>
+    </div>
+    <div class="job-description-container" [style.display]="displayJobDescription02">
+      <img [src]="employerLogoUrl02" alt="Volkswagen Logo" class="employer-logo">
+      <p class="job-description">adsf adsfsd kflahd asdf fdakshflksadf kfdlahsklfhal sd asdf asdklfh lksaflkal kf ienali nfaie blgka kleahkl  slkfl dkasdf daskfhlakdshflk ahsldfheoinoavn oaiv kladhsv vkdslk vkhsdl ni orboivi orbo bv ovi bob oiab h asdf</p>
+    </div>
+    <div class="job-description-container" [style.display]="displayJobDescription03">
+      <img [src]="employerLogoUrl03" alt="oneremains Logo" class="employer-logo">
+      <p class="job-description">adsf adsfsd kflahd asdf fdakshflksadf kfdlahsklfhal sd asdf asdklfh lksaflkal kf ienali nfaie blgka kleahkl  slkfl dkasdf daskfhlakdshflk ahsldfheoinoavn oaiv kladhsv vkdslk vkhsdl ni orboivi orbo bv ovi bob oiab h asdf</p>
+    </div>
+    <div class="job-description-container" [style.display]="displayJobDescription04">
+      <img [src]="employerLogoUrl04" alt="Freelance Logo" class="employer-logo">
+      <p class="job-description">adsf adsfsd kflahd asdf fdakshflksadf kfdlahsklfhal sd asdf asdklfh lksaflkal kf ienali nfaie blgka kleahkl  slkfl dkasdf daskfhlakdshflk ahsldfheoinoavn oaiv kladhsv vkdslk vkhsdl ni orboivi orbo bv ovi bob oiab h asdf</p>
     </div>
     <p class="separator"></p>
     <h2 class="text-center">Education</h2>
