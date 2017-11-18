@@ -54,20 +54,20 @@
 .selector-container {
     display: flex;
     justify-content: center;
-    margin-top: 50px;
-    margin-bottom: 30px;
+    margin-top: 30px;
+    margin-bottom: 20px;
 }
 
 .selector-button {
     display: inline-block;
-    margin: 0 10px;
-    padding: 10px 10px;
+    margin: 0 1.5%;
+    padding: 8px 8px;
     border-radius: 30px;
     background-color: rgb(252, 252, 252);
     border: 2px solid rgba(39, 55, 71, 0.74);
     color: rgb(39, 55, 71);
     font-weight: 100;
-    font-size: 16px;
+    font-size: 12px;
     transition: all 0.5s;
 }
 
@@ -125,6 +125,15 @@ h3 {
     .content-paragraph-centered {
         width: 70%;
     }
+    .selector-container {
+        margin-top: 30px;
+        margin-bottom: 20px;
+    }
+    .selector-button {
+        padding: 10px 10px;
+        border-radius: 30px;
+        font-size: 12px;
+    }
 }
 
 @media (min-width: 576px) {
@@ -164,6 +173,15 @@ h3 {
     h3 {
         font-size: 22px;
     }
+    .selector-container {
+        margin-top: 50px;
+        margin-bottom: 30px;
+    }
+    .selector-button {
+        margin: 0 1.5%;
+        padding: 11px 11px;
+        font-size: 16px;
+    }
 }
 
 @media (min-width: 768px) {
@@ -192,5 +210,10 @@ h3 {
     }
     h3 {
         padding-top: 30px;
+    }
+    .selector-button {
+        margin: 0 1.5%;
+        padding: 12px 12px;
+        font-size: 18px;
     }
 }
