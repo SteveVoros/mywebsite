@@ -67,25 +67,35 @@
     </div>
     <p class="separator"></p>
     <h2 class="text-center">Certifications</h2>
-    <p class="content-paragraph content-paragraph-centered first-paragraph">Certifications are one way to keep pace with the newest advancements. I have valid Microsoft certifications, which I obtained
-      during 2017.</p>
+    <p class="content-paragraph content-paragraph-centered first-paragraph">Certifications are one way to keep pace with the newest advancements. I have valid Microsoft certifications, which I
+      obtained during 2017.</p>
     <p class="certid-text text-center">Microsoft Certification ID</p>
     <p class="text-center">
       <i>14227462</i>
     </p>
     <div class="badge-container">
-      <a [href]="certDownloadUrl01" download><img [src]="certBadgeUrl01" alt="Microsoft Certified Solutions Expert Badge: Cloud Platform and Infrastructure" class="badge"></a>
-      <a [href]="certDownloadUrl02" download><img [src]="certBadgeUrl02" alt="Microsoft Certificate Solutions Developer Badge: App Builder" class="badge"></a>
+      <a [href]="certDownloadUrl01" download>
+        <img [src]="certBadgeUrl01" alt="Microsoft Certified Solutions Expert Badge: Cloud Platform and Infrastructure" class="badge">
+      </a>
+      <a [href]="certDownloadUrl02" download>
+        <img [src]="certBadgeUrl02" alt="Microsoft Certificate Solutions Developer Badge: App Builder" class="badge">
+      </a>
     </div>
     <p class="separator"></p>
     <h2 class="text-center">Work Experience</h2>
-    <p class="content-paragraph content-paragraph-wide first-paragraph">I have solid coding skills and acquired significant experience through diverse projects along the way. I worked
-      for one of the most renown luxury carmakers and I believe I know quite a bit about reliability, precision, and the
-      importance of work quality.</p>
+    <p class="content-paragraph content-paragraph-wide first-paragraph">I have solid coding skills and acquired significant experience through diverse projects along the way. I worked for one
+      of the most renown luxury carmakers and I believe I know quite a bit about reliability, precision, and the importance
+      of work quality.</p>
     <p class="content-paragraph content-paragraph-wide">Besides my experience at a multinational company, I always wanted to challenge myself in the startup world by converting
       one of my ideas into a reality. I founded my own startup and was the lead developer for a team of five and the coordinator
       of multiple contractors. There, I needed to learn about the importance of flexibility, which I consider one of my greatest
       strengths even today.</p>
+    <div class="selector-container">
+      <button class="selector-button" (click)="selectorClicked($event)">Audi</button>
+      <button class="selector-button" (click)="selectorClicked($event)">Volkswagen</button>
+      <button class="selector-button" (click)="selectorClicked($event)">oneremains</button>
+      <button class="selector-button" (click)="selectorClicked($event)">Self-employment</button>
+    </div>
     <p class="separator"></p>
     <h2 class="text-center">Education</h2>
     <!-- <p>Todos: Add interactive company list, carrier history tree, MS certifications, content above</p> -->
