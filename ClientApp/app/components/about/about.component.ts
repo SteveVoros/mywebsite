@@ -52,8 +52,10 @@ export class AboutComponent extends AutoScrollAfterLoading {
     this.certDownloadUrl02 = this.baseUrl + 'files/certificate_MCSD.pdf';
   }
 
-  selectorClicked(clickedEvent: MouseEvent) {
-    let targetElement = <Element>clickedEvent.target;
-    // targetElement.className = 'selector-button selector-button-selected';
+  selectorClicked(element: Element, otherElements: Element[]) {
+    element.className = 'selector-button selector-button-selected';
+    otherElements.forEach(el => {
+      el.className = 'selector-button';
+    });
   }
 }

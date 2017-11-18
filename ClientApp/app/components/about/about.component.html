@@ -91,10 +91,10 @@
       of multiple contractors. There, I needed to learn about the importance of flexibility, which I consider one of my greatest
       strengths even today.</p>
     <div class="selector-container">
-      <button class="selector-button" [class.selector-button-selected]="true" (click)="selectorClicked($event)">Audi</button>
-      <button class="selector-button" (click)="selectorClicked($event)">Volkswagen</button>
-      <button class="selector-button" (click)="selectorClicked($event)">oneremains</button>
-      <button class="selector-button" (click)="selectorClicked($event)">Freelance</button>
+      <button #selector01 class="selector-button selector-button-selected" (click)="selectorClicked(selector01, [selector02, selector03, selector04])">Audi</button>
+      <button #selector02 class="selector-button" (click)="selectorClicked(selector02, [selector01, selector03, selector04])">Volkswagen</button>
+      <button #selector03 class="selector-button" (click)="selectorClicked(selector03, [selector01, selector02, selector04])">oneremains</button>
+      <button #selector04 class="selector-button" (click)="selectorClicked(selector04, [selector01, selector02, selector03])">Freelance</button>
     </div>
     <p class="separator"></p>
     <h2 class="text-center">Education</h2>
