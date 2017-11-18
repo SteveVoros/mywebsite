@@ -119,7 +119,7 @@ h3 {
         padding: 0 0 0 20px;
     }
     .content-paragraph-centered {
-        width: 480px;
+        width: 70%;
     }
 }
 
@@ -132,9 +132,9 @@ h3 {
     .content-paragraph-wide {
         width: 90%;
     }
-    .content-paragraph-centered {
+    /* .content-paragraph-centered {
         width: 550px;
-    }
+    } */
     .padding-lg {
         padding-top: 70px;
         padding-bottom: 70px;
