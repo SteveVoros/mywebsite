@@ -46,7 +46,7 @@
     padding-top: 10px;
 }
 
-.techlogo:hover + .techlogo-infobox {
+.techlogo:hover+.techlogo-infobox {
     visibility: visible;
     opacity: 1;
 }
@@ -71,7 +71,7 @@
 
 .job-description-container {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     margin: auto;
     padding-top: 30px;
     padding-left: 30px;
@@ -80,15 +80,16 @@
 }
 
 .employer-logo {
-    margin: 0 40px 0 0;
+    margin: 25px 0 0 0;
     width: auto;
     height: 100px;
 }
 
 .job-description {
-    margin: 0 0 0 40px;
+    margin: 0 0 0 60px;
     text-align: justify;
     font-size: 17px;
+    width: 350px;
 }
 
 #introduction {
@@ -97,6 +98,22 @@
 
 #introImg {
     padding: 30px 0 0 0;
+}
+
+#audiLogo {
+    width: 180px;
+    height: auto;
+    margin: 30px 0 0 0;
+}
+
+#oneremainsLogo {
+    width: 75px;
+    height: auto;
+    padding: 0 0 2px 0;
+}
+
+#oneremainsSubtitle {
+    font-size: 17px;
 }
 
 #freelanceLogo {
