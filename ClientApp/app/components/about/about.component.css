@@ -71,8 +71,6 @@
 
 .job-description-container {
     margin: auto;
-    margin-left: 5%;
-    margin-right: 5%;
     height: 500px;
 }
 
@@ -96,6 +94,7 @@
     text-align: justify;
     font-size: 17px;
     width: 350px;
+    padding: 30px 0 30px 0;
 }
 
 #introduction {
@@ -126,6 +125,10 @@
 #freelanceLogo {
     width: 200px;
     height: 100px;
+}
+
+#seperatorAfterEmployment {
+    margin-top: 30px;
 }
 
 @media(min-width: 480px) {
@@ -162,13 +165,8 @@
 }
 
 @media(min-width: 768px) {
-    .job-description-container {
-        width: 700px;
-        height: 500px;
-    }
     #audiLogo {
         width: 150px;
-        height: auto;
     }
     #freelanceLogo {
         width: 170px;
@@ -189,10 +187,24 @@
         width: 90%;
         padding: 90px 0 0 0;
     }
+    #audiLogo {
+        width: 180px;
+    }
+    #freelanceLogo {
+        width: 200px;
+        height: 100px;
+    }
     .certid-text {
         padding-top: 30px;
+    }
+    .job-description-container {
+        width: 700px;
+        height: 500px;
     }
     .job-description {
         margin: 0 0 0 60px;
     }
+    #seperatorAfterEmployment {
+        margin-top: 60px;
+    }    
 }
