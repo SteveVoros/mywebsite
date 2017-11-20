@@ -93,8 +93,8 @@
     vertical-align: middle;
     margin: 0;
     text-align: justify;
-    font-size: 17px;
-    width: 350px;
+    font-size: 15px;
+    width: 80%;
     padding: 30px 0 30px 0;
 }
 
@@ -140,6 +140,10 @@
 @media(min-width: 480px) {
     #introduction {
         width: 370px;
+    }
+    .job-description {
+        width: 350px;
+        font-size: 17px;
     }
 }
 
