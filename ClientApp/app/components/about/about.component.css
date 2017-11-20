@@ -80,6 +80,7 @@
 .job-logo-container {
     display: inline-block;
     vertical-align: middle;
+    margin: 0 30px;
 }
 
 .employer-logo {
@@ -106,16 +107,21 @@
 }
 
 #audiLogo {
-    width: 180px;
+    width: 150px;
+    height: auto;
+}
+
+#volkswagenLogo {
+    width: 95px;
     height: auto;
 }
 
 #oneremainsLogo {
     position: relative;
-    top: 8px;
-    width: 75px;
+    top: 3px;
+    width: 70px;
     height: auto;
-    padding: 0 0 10px 0;
+    padding: 0 0 3px 0;
 }
 
 #oneremainsSubtitle {
@@ -123,8 +129,8 @@
 }
 
 #freelanceLogo {
-    width: 200px;
-    height: 100px;
+    width: 170px;
+    height: 85px;
 }
 
 #seperatorAfterEmployment {
@@ -159,18 +165,11 @@
     #introduction {
         width: 440px;
     }
-    .job-description {
-        margin: 0 0 0 40px;
-    }
 }
 
 @media(min-width: 768px) {
-    #audiLogo {
-        width: 150px;
-    }
-    #freelanceLogo {
-        width: 170px;
-        height: 85px;
+    .job-logo-container {
+        margin: 0 50px;
     }
 }
 
@@ -201,8 +200,8 @@
         width: 700px;
         height: 500px;
     }
-    .job-description {
-        margin: 0 0 0 60px;
+    .job-logo-container {
+        margin: 0 70px;
     }
     #seperatorAfterEmployment {
         margin-top: 60px;
