@@ -72,27 +72,26 @@
 .job-description-container {
     margin: auto;
     width: 700px;
+    height: 500px;
 }
 
 .job-description-content {
-    /* padding: 30px; */
 }
 
 .job-logo-container {
     display: inline-block;
-    padding: 30px 0;
-    /* width: 30%; */
+    vertical-align: middle;
+    padding: 0;
 }
 
 .employer-logo {
-    /* margin: 25px 0 0 0; */
     width: auto;
     height: 100px;
-    vertical-align: initial;
 }
 
 .job-description {
     display: inline-block;
+    vertical-align: middle;
     margin: 0 0 0 60px;
     text-align: justify;
     font-size: 17px;
@@ -110,7 +109,6 @@
 #audiLogo {
     width: 180px;
     height: auto;
-    /* margin: 30px 0 0 0; */
 }
 
 #oneremainsLogo {
