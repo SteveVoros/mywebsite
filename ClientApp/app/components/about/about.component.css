@@ -70,13 +70,20 @@
 }
 
 .job-description-container {
-    display: flex;
-    justify-content: center;
     margin: auto;
-    padding-top: 30px;
     padding-left: 30px;
     padding-right: 30px;
     width: 700px;
+}
+
+.job-description-content {
+    /* display: flex;
+    justify-content: center; */
+}
+
+.job-logo-container {
+    display: inline-block;
+    /* width: 30%; */
 }
 
 .employer-logo {
@@ -86,6 +93,7 @@
 }
 
 .job-description {
+    display: inline-block;
     margin: 0 0 0 60px;
     text-align: justify;
     font-size: 17px;

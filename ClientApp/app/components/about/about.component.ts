@@ -34,7 +34,7 @@ export class AboutComponent extends AutoScrollAfterLoading {
   certDownloadUrl01: string;
   certDownloadUrl02: string;
 
-  displayJobDescription01: string = 'flex';
+  displayJobDescription01: string = 'initial';
   displayJobDescription02: string = 'none';
   displayJobDescription03: string = 'none';
   displayJobDescription04: string = 'none';
@@ -73,28 +73,28 @@ export class AboutComponent extends AutoScrollAfterLoading {
       el.className = 'selector-button';
     });
     if (element.id == 'selector01') {
-      this.displayJobDescription01 = 'flex';
+      this.displayJobDescription01 = 'initial';
       this.displayJobDescription02 = 'none';
       this.displayJobDescription03 = 'none';
       this.displayJobDescription04 = 'none';
     }
     else if(element.id == 'selector02') {
       this.displayJobDescription01 = 'none';
-      this.displayJobDescription02 = 'flex';
+      this.displayJobDescription02 = 'initial';
       this.displayJobDescription03 = 'none';
       this.displayJobDescription04 = 'none';
     }
     else if(element.id == 'selector03') {
       this.displayJobDescription01 = 'none';
       this.displayJobDescription02 = 'none';
-      this.displayJobDescription03 = 'flex';
+      this.displayJobDescription03 = 'initial';
       this.displayJobDescription04 = 'none';
     }
     else if(element.id == 'selector04') {
       this.displayJobDescription01 = 'none';
       this.displayJobDescription02 = 'none';
       this.displayJobDescription03 = 'none';
-      this.displayJobDescription04 = 'flex';
+      this.displayJobDescription04 = 'initial';
     }
   }
 }
