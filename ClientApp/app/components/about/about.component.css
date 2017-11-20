@@ -113,10 +113,10 @@
 
 #oneremainsLogo {
     position: relative;
-    top: 4px;
+    top: 8px;
     width: 75px;
     height: auto;
-    padding: 0 0 4px 0;
+    padding: 0 0 10px 0;
 }
 
 #oneremainsSubtitle {
