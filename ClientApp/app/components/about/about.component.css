@@ -80,7 +80,8 @@
 .job-logo-container {
     display: inline-block;
     vertical-align: middle;
-    margin: 0 30px;
+    margin: 0px 30px;
+    margin-top: 20px;
 }
 
 .employer-logo {
@@ -172,9 +173,9 @@
 }
 
 @media(min-width: 768px) {
-    .job-logo-container {
+    /* .job-logo-container {
         margin: 0 50px;
-    }
+    } */
 }
 
 @media(min-width: 1200px) {
