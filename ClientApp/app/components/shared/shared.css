@@ -126,14 +126,14 @@ h3 {
 }
 
 .history-graph-container {
-    /* margin: auto; */
     margin: 0;
     padding: 0;
 }
 
 .milestone-container {
     height: 150px;
-    padding: 20px 0;
+    /* margin-top: 20px;
+    margin-bottom: 20px; */
     padding-left: 30px;
 }
 
@@ -263,6 +263,12 @@ h3 {
     .content-paragraph-centered {
         width: 70%;
     }
+    .milestone-container {
+        margin: 100px 0;
+    }
+    .milestone-content {
+        width: 30%;
+    }
     .node {
         position: absolute;
         left: 50%;
@@ -275,9 +281,11 @@ h3 {
     }
     .float-left-lg {
         float: left;
+        text-align: right;
     }
     .float-right-lg {
         float: right;
+        text-align: left;
     }
 }
 
