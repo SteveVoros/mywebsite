@@ -263,30 +263,6 @@ h3 {
     .content-paragraph-centered {
         width: 70%;
     }
-    .milestone-container {
-        margin: 100px 0;
-    }
-    .milestone-content {
-        width: 30%;
-    }
-    .node {
-        position: absolute;
-        left: 50%;
-        width: 140px;
-        height: 140px;
-        margin-left: -70px;
-        margin-right: 0;
-        font-size: 19px;
-        line-height: 19px;
-    }
-    .float-left-lg {
-        float: left;
-        text-align: right;
-    }
-    .float-right-lg {
-        float: right;
-        text-align: left;
-    }
 }
 
 @media (min-width: 1200px) {
@@ -311,5 +287,30 @@ h3 {
         margin: 0 1.5%;
         padding: 11px 15px;
         font-size: 18px;
+    }
+    .milestone-container {
+        margin: 100px 0;
+        padding: 0;
+    }
+    .milestone-content {
+        width: 35%;
+    }
+    .node {
+        position: absolute;
+        left: 50%;
+        width: 140px;
+        height: 140px;
+        margin-left: -70px;
+        margin-right: 0;
+        font-size: 19px;
+        line-height: 19px;
+    }
+    .float-left-lg {
+        float: left;
+        text-align: right;
+    }
+    .float-right-lg {
+        float: right;
+        text-align: left;
     }
 }
