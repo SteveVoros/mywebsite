@@ -115,6 +115,8 @@
 #volkswagenLogo {
     width: 95px;
     height: auto;
+    margin-left: 25px;
+    margin-right: 25px;
 }
 
 #oneremainsLogo {
@@ -123,6 +125,8 @@
     width: 70px;
     height: auto;
     padding: 0 0 3px 0;
+    margin-left: 25px;
+    margin-right: 25px;
 }
 
 #oneremainsSubtitle {
