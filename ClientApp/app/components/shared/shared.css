@@ -140,7 +140,7 @@ h3 {
 
 .history-graph-container:before {
     position: absolute;
-    left: 55px;
+    left: 65px;
     top: 3px;
     bottom: 0;
     margin-left: -0.5px;
@@ -371,7 +371,7 @@ h3 {
         position: absolute;
         left: 50%;
         top: 0;
-        bottom: 0;
+        bottom: 20px;
         margin-left: -0.5px;
         content: "";
         background-color: rgb(224, 224, 224);
