@@ -11,12 +11,14 @@ import { AboutComponent } from './components/about/about.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { BlogComponent } from './components/blog/blog.component';
 import { ContactService } from './components/services/ContactService';
+import { ProjectsComponent } from './components/projects/projects.component';
 
 @NgModule({
     declarations: [
         AppComponent,
         SidebarComponent,
         AboutComponent,
+        ProjectsComponent,
         ContactComponent,
         BlogComponent,
         HomeComponent
@@ -29,6 +31,7 @@ import { ContactService } from './components/services/ContactService';
             { path: '', redirectTo: 'home', pathMatch: 'full' },
             { path: 'home', component: HomeComponent },
             { path: 'about', component: AboutComponent },
+            { path: 'projects', component: ProjectsComponent },
             { path: 'contact', component: ContactComponent },
             { path: 'blog', component: BlogComponent },
             { path: '**', redirectTo: 'home' }
