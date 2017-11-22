@@ -10,6 +10,7 @@ import { AutoScrollAfterLoading } from '../shared/AutoScrollAfterLoading';
 export class ProjectsComponent extends AutoScrollAfterLoading {
     imageUrlTile01: string;
     imageUrlTile02: string;
+    imageUrlTile03: string;
     baseUrl: string;
 
     constructor(route: ActivatedRoute, @Inject('BASE_URL') baseUrl: string) {
@@ -17,5 +18,6 @@ export class ProjectsComponent extends AutoScrollAfterLoading {
         this.baseUrl = baseUrl;
         this.imageUrlTile01 = this.baseUrl + 'img/tile-cloud.png';
         this.imageUrlTile02 = this.baseUrl + 'img/tile-cloud-AWS.png';
+        this.imageUrlTile03 = this.baseUrl + 'img/oneremains.png';
     }
 }

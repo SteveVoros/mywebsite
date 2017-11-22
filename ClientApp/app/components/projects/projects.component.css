@@ -12,10 +12,10 @@
     width: 200px;
     margin: 30px;
     padding: 20px;
-    background-color: rgb(254, 254, 254);
-    border: 1px solid rgb(254, 254, 254);
+    background-color: rgb(253, 253, 253);
+    border: 1px solid rgb(253, 253, 253);
     box-shadow: 1px 1px 5px black;
-    border-radius: 50px;
+    border-radius: 70px;
     transition: all 0.3s;
 }
 
@@ -49,6 +49,6 @@
     font-size: 14px;
 }
 
-#tileImgAWS {
-
+#tileOneremains {
+    height: 54%;
 }
