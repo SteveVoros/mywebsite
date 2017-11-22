@@ -208,5 +208,8 @@
     }
     #seperatorAfterEmployment {
         margin-top: 60px;
-    }    
+    }
+    #educationHeader {
+        margin-bottom: 50px;
+    }
 }
