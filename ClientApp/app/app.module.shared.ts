@@ -9,6 +9,7 @@ import { SidebarComponent } from './components/sidebar/sidebar.component';
 import { HomeComponent } from './components/home/home.component';
 import { AboutComponent } from './components/about/about.component';
 import { ContactComponent } from './components/contact/contact.component';
+import { BlogComponent } from './components/blog/blog.component';
 import { ContactService } from './components/services/ContactService';
 
 @NgModule({
@@ -17,6 +18,7 @@ import { ContactService } from './components/services/ContactService';
         SidebarComponent,
         AboutComponent,
         ContactComponent,
+        BlogComponent,
         HomeComponent
     ],
     imports: [
@@ -28,6 +30,7 @@ import { ContactService } from './components/services/ContactService';
             { path: 'home', component: HomeComponent },
             { path: 'about', component: AboutComponent },
             { path: 'contact', component: ContactComponent },
+            { path: 'blog', component: BlogComponent },
             { path: '**', redirectTo: 'home' }
         ])
     ],

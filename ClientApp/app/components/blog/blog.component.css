@@ -1,0 +1,10 @@
+#comingSoon {
+    text-align: center;
+    margin-top: 50px;
+}
+
+@media(min-width: 576px) {
+    #comingSoon {
+        text-align: initial;
+    }
+}
