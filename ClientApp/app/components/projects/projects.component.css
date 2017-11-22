@@ -11,31 +11,44 @@
     height: 200px;
     width: 200px;
     margin: 30px;
-    border: 1px solid black;
-    border-radius: 20px;
-    transition: all 0.5s;
+    padding: 20px;
+    background-color: rgb(254, 254, 254);
+    border: 1px solid rgb(254, 254, 254);
+    box-shadow: 1px 1px 5px black;
+    border-radius: 50px;
+    transition: all 0.3s;
+}
+
+.project-tile img {
+    width: auto;
+    height: 80px;
 }
 
 .project-tile:hover {
     transform: scale(1.1, 1.1);
 }
 
-.project-tile h3 {
+.tile-title {
     margin: 0;
     position: absolute;
-    top: 40%;
+    top: 72%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 90%;
+}
+
+.project-tile h3 {
+    margin: 0;
+    padding: 0;
     font-size: 16px;
 }
 
 .project-tile small {
     margin: 0;
-    position: absolute;
-    top: 55%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 80%;
+    padding: 0;
     font-size: 14px;
+}
+
+#tileImgAWS {
+
 }
