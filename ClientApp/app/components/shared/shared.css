@@ -130,6 +130,26 @@ h3 {
     padding: 0;
 }
 
+.history-graph-container .milestone-container:first-child {
+    margin-top: 0;
+}
+
+.history-graph-container .milestone-container:last-child {
+    margin-bottom: 0;
+}
+
+.history-graph-container:before {
+    position: absolute;
+    left: 85px;
+    top: 0;
+    bottom: 0;
+    margin-left: -0.5px;
+    content: "";
+    background-color: rgb(224, 224, 224);
+    width: 1px;
+    z-index: 0;
+}
+
 .milestone-container {
     height: 150px;
     padding-left: 30px;
@@ -167,14 +187,6 @@ h3 {
     margin: 0;
     padding: 0;
     font-weight: 600;
-}
-
-.history-graph-container .milestone-container:first-child {
-    margin-top: 0;
-}
-
-.history-graph-container .milestone-container:last-child {
-    margin-bottom: 0;
 }
 
 .milestone-content {
@@ -269,6 +281,9 @@ h3 {
         width: 90px;
         height: 90px;
     }
+    .history-graph-container:before {
+        left: 95px;
+    }
 }
 
 @media (min-width: 768px) {
@@ -319,9 +334,6 @@ h3 {
         margin-right: 0;
         font-size: 19px;
         line-height: 19px;
-    }
-    .history-graph-container:before {
-        left: 50%;
     }
     .history-graph-container .milestone-container:first-child {
         margin-top: 50px;
