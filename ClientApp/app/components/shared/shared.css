@@ -192,6 +192,9 @@ h3 {
     display: inline-block;
     vertical-align: middle;
 }
+.milestone-content p {
+    font-size: 16px;
+}
 
 @media (min-width: 480px) {
     #title {
@@ -260,6 +263,9 @@ h3 {
     }
     h3 {
         font-size: 22px;
+    }
+    .node {
+        margin-right: 50px;
     }
 }
 
@@ -342,5 +348,14 @@ h3 {
     }
     .history-graph-container .milestone-container:last-child {
         margin-bottom: 0;
+    }
+    .milestone-container:before {
+        content: "";
+        display: inline-block;
+        vertical-align: middle;
+        height: 100%;
+    }
+    .milestone-content h4 {
+        font-size: 19px;
     }
 }
