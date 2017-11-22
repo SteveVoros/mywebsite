@@ -194,6 +194,7 @@ h3 {
     vertical-align: middle;
     width: 65%;
     height: 100px;
+    padding: 10px 0;
 }
 
 .milestone-content h4 {
@@ -324,6 +325,7 @@ h3 {
     }
     .milestone-content {
         width: 35%;
+        padding: 20px 0;
     }
     .node {
         position: absolute;
