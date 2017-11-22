@@ -49,9 +49,11 @@
     font-size: 14px;
 }
 
-#tileOneremains {
+#tileImgOneremains {
     height: 54%;
 }
 
-#tileTrading {
+#tileImgSJV {
+    margin-top: 20px;
+    height: 30%;
 }
