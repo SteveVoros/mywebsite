@@ -151,7 +151,9 @@ h3 {
 }
 
 .milestone-container {
-    height: 150px;
+    height: 70px;
+    margin-top: 40px;
+    margin-bottom: 40px;
     padding-left: 30px;
 }
 
@@ -193,8 +195,6 @@ h3 {
     display: inline-block;
     vertical-align: middle;
     width: 65%;
-    height: 100px;
-    padding: 10px 0;
 }
 
 .milestone-content h4 {
