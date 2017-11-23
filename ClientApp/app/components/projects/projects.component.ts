@@ -22,4 +22,23 @@ export class ProjectsComponent extends AutoScrollAfterLoading {
         this.imageUrlTile03 = this.baseUrl + 'img/oneremains.png';
         this.imageUrlTile04 = this.baseUrl + 'img/trading.jpg';
     }
+
+    onClickProject01() {
+
+    }
+    onClickProject02() {
+
+    }
+    onClickProject03() {
+
+    }
+    onClickProject04() {
+
+    }
+    onClickProject05() {
+
+    }
+    onClickProject06() {
+
+    }
 }
