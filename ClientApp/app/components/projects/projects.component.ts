@@ -14,10 +14,10 @@ export class ProjectsComponent extends AutoScrollAfterLoading {
     imageUrlTile04: string;
     baseUrl: string;
 
-    displayPopupBackground: string = 'initial';
+    displayPopupBackground: string = 'none';
     visuallyHiddenPopupBackground: boolean = false;
 
-    displayPopup: string = 'initial';
+    displayPopup: string = 'none';
     visuallyHiddenPopup: boolean = false;
 
     constructor(route: ActivatedRoute, @Inject('BASE_URL') baseUrl: string) {
@@ -30,7 +30,8 @@ export class ProjectsComponent extends AutoScrollAfterLoading {
     }
 
     onClickProject01() {
-
+        this.displayPopupBackground = 'initial';
+        this.displayPopup = 'initial';
     }
     onClickProject02() {
 
