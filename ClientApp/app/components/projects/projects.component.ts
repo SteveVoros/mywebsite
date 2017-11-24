@@ -49,6 +49,16 @@ export class ProjectsComponent extends AutoScrollAfterLoading {
     }
 
     closePopup() {
+        this.visuallyHiddenPopupBackground = true;
+        this.visuallyHiddenPopup = true;
+    }
 
+    onTransitionEndPopup() {
+        if (this.displayPopupBackground == 'initial' && this.visuallyHiddenPopup) {
+            this.displayPopupBackground = 'none';
+            this.visuallyHiddenPopupBackground = false;
+            this.displayPopup = 'none';
+            this.visuallyHiddenPopup = false;
+        }
     }
 }
