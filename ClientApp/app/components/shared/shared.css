@@ -209,6 +209,34 @@ h3 {
     vertical-align: middle;
 }
 
+.popup-background {
+    background-color: rgba(0, 0, 0, 0.92);
+    position: fixed;
+    left: 0;
+    top: 0;
+    height:100vh;
+    width: 100vmax;
+    z-index: 4;
+    animation-name: fadeInToastyBackground;
+    animation-duration: 0.3s;
+}
+
+@keyframes fadeInToastyBackground {
+    from {background-color: rgba(0, 0, 0, 0);}
+    to {background-color: rgba(0, 0, 0, 0.92);}
+}
+
+.visually-hidden-background {
+    background-color: rgba(0, 0, 0, 0);
+    animation-name: fadeOut;
+    animation-duration: 0.3s;
+}
+
+@keyframes fadeOut {
+    from {background-color: rgba(0, 0, 0, 0.92);}
+    to {background-color: rgba(0, 0, 0, 0);}
+}
+
 @media (min-width: 480px) {
     #title {
         text-align: initial;

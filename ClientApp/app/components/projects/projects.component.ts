@@ -14,6 +14,9 @@ export class ProjectsComponent extends AutoScrollAfterLoading {
     imageUrlTile04: string;
     baseUrl: string;
 
+    displayPopupBackground: string = 'none';
+    visuallyHiddenPopupBackground: boolean = false;
+
     constructor(route: ActivatedRoute, @Inject('BASE_URL') baseUrl: string) {
         super(route);
         this.baseUrl = baseUrl;
@@ -39,6 +42,10 @@ export class ProjectsComponent extends AutoScrollAfterLoading {
 
     }
     onClickProject06() {
+
+    }
+
+    closePopup() {
 
     }
 }
