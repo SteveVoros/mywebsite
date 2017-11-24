@@ -14,8 +14,11 @@ export class ProjectsComponent extends AutoScrollAfterLoading {
     imageUrlTile04: string;
     baseUrl: string;
 
-    displayPopupBackground: string = 'none';
+    displayPopupBackground: string = 'initial';
     visuallyHiddenPopupBackground: boolean = false;
+
+    displayPopup: string = 'initial';
+    visuallyHiddenPopup: boolean = false;
 
     constructor(route: ActivatedRoute, @Inject('BASE_URL') baseUrl: string) {
         super(route);

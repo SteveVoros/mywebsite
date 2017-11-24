@@ -197,9 +197,11 @@ h3 {
     vertical-align: middle;
     width: 65%;
 }
+
 .milestone-content h4 {
     font-size: 12px;
 }
+
 .milestone-content p {
     font-size: 12px;
 }
@@ -210,11 +212,11 @@ h3 {
 }
 
 .popup-background {
-    background-color: rgba(0, 0, 0, 0.92);
+    background-color: rgba(0, 0, 0, 0.623);
     position: fixed;
     left: 0;
     top: 0;
-    height:100vh;
+    height: 100vh;
     width: 100vmax;
     z-index: 4;
     animation-name: fadeInToastyBackground;
@@ -222,8 +224,12 @@ h3 {
 }
 
 @keyframes fadeInToastyBackground {
-    from {background-color: rgba(0, 0, 0, 0);}
-    to {background-color: rgba(0, 0, 0, 0.92);}
+    from {
+        background-color: rgba(0, 0, 0, 0);
+    }
+    to {
+        background-color: rgba(0, 0, 0, 0.92);
+    }
 }
 
 .visually-hidden-background {
@@ -233,8 +239,98 @@ h3 {
 }
 
 @keyframes fadeOut {
-    from {background-color: rgba(0, 0, 0, 0.92);}
-    to {background-color: rgba(0, 0, 0, 0);}
+    from {
+        background-color: rgba(0, 0, 0, 0.92);
+    }
+    to {
+        background-color: rgba(0, 0, 0, 0);
+    }
+}
+
+.popup {
+    background-color: rgb(241, 241, 241);
+    position: fixed;
+    left: 50vw;
+    top: 40vh;
+    margin-left: -150px;
+    margin-top: -185px;
+    height: 370px;
+    width: 300px;
+    z-index: 4;
+    border-radius: 6px 6px 5px 5px;
+    font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    transition: all 0.5s;
+    animation-name: slideInPopup;
+    animation-duration: 0.3s;
+}
+
+@keyframes slideInPopup {
+    0% {
+        opacity: 0;
+        transform: translateY(-100%);
+        offset: 0;
+    }
+    30% {
+        opacity: 1;
+        transform: translateY(15px);
+        offset: 0.3;
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+        offset: 1;
+    }
+}
+
+.visually-hidden-popup {
+    animation-name: slideOutPopup;
+    animation-duration: 0.3s;
+}
+
+@keyframes slideOutPopup {
+    0% {
+        opacity: 1;
+        transform: translateY(0);
+        offset: 0;
+    }
+    30% {
+        opacity: 0.7;
+        transform: translateY(15px);
+        offset: 0.7;
+    }
+    100% {
+        opacity: 0;
+        transform: translateY(-100%);
+        offset: 1;
+    }
+}
+
+.popup-close-button {
+    background-color: rgb(241, 241, 241);
+    position: absolute;
+    right: 10px;
+    top: 7px;
+    border: 0 transparent;
+}
+
+.popup-close-button:active,
+.popup-close-button:focus,
+.popup-close-button:visited {
+    outline: none;
+}
+
+.popup-close-button span {
+    color: rgb(80, 80, 80);
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1;
+    text-shadow: 0px 1px 1px rgb(133, 128, 128);
+    transform:scale(1.2,1);
+    display: inline-block;
+}
+.popup-close-button span:hover { 
+    color: rgb(80, 80, 80);
+    text-shadow: 0px 2px 2px rgb(124, 124, 124);
 }
 
 @media (min-width: 480px) {
@@ -337,6 +433,12 @@ h3 {
     }
     .content-paragraph-centered {
         width: 70%;
+    }
+    .popup {
+        height: 450px;
+        width: 400px;
+        margin-left: -200px;
+        margin-top: -225px;
     }
 }
 
