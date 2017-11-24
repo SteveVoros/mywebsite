@@ -248,7 +248,7 @@ h3 {
 }
 
 .popup {
-    background-color: rgb(241, 241, 241);
+    background-color: white;
     position: fixed;
     left: 50vw;
     top: 40vh;
@@ -307,7 +307,7 @@ h3 {
 }
 
 .popup-close-button {
-    background-color: rgb(241, 241, 241);
+    background-color: white;
     position: absolute;
     right: 10px;
     top: 7px;
