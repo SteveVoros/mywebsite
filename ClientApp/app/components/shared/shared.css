@@ -480,6 +480,12 @@ h3 {
     .popup-body {
         padding: 40px;
     }
+    .popup-md-small {
+        top: 50vh;
+        width: 500px;
+        height: auto;
+        margin-left: -250px;
+    }
 }
 
 @media (min-width: 1200px) {
