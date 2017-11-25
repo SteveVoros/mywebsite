@@ -349,19 +349,21 @@ h3 {
 
 .popup h2 {
     margin: 0;
-    padding: 6% 0;
+    padding: 8% 0;
     font-weight: 400;
+    font-size: 21px;
 }
 
 .popup h3 {
     margin: 0;
-    margin-bottom: 10px;
+    margin-bottom: 6px;
     padding: 0;
     font-weight: 400;
+    font-size: 19px;
 }
 
 .popup p {
-    font-size: 16px;
+    font-size: 15px;
 }
 
 @media (min-width: 480px) {
