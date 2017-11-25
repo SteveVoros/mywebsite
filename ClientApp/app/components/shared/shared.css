@@ -258,7 +258,7 @@ h3 {
     top: 40vh;
     margin-left: -150px;
     margin-top: -185px;
-    height: auto;
+    height: 450px;
     width: 300px;
     z-index: 4;
     border-radius: 6px 6px 5px 5px;
@@ -266,6 +266,7 @@ h3 {
     transition: all 0.5s;
     animation-name: slideInPopup;
     animation-duration: 0.3s;
+    overflow-y: auto;
 }
 
 @keyframes slideInPopup {
@@ -472,7 +473,7 @@ h3 {
         width: 70%;
     }
     .popup {
-        height: auto;
+        height: 450px;
         width: 400px;
         margin-left: -200px;
         margin-top: -225px;
