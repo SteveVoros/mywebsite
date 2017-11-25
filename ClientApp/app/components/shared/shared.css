@@ -361,6 +361,7 @@ h3 {
 
 .popup h3 {
     margin: 0;
+    margin-top: 10px;
     margin-bottom: 6px;
     padding: 0;
     font-weight: 400;
@@ -369,6 +370,7 @@ h3 {
 
 .popup p {
     font-size: 15px;
+    text-align: justify;
 }
 
 @media (min-width: 480px) {
