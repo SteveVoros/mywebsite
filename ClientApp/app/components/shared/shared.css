@@ -258,7 +258,7 @@ h3 {
     top: 40vh;
     margin-left: -150px;
     margin-top: -185px;
-    height: 370px;
+    height: auto;
     width: 300px;
     z-index: 4;
     border-radius: 6px 6px 5px 5px;
@@ -472,7 +472,7 @@ h3 {
         width: 70%;
     }
     .popup {
-        height: 450px;
+        height: auto;
         width: 400px;
         margin-left: -200px;
         margin-top: -225px;
