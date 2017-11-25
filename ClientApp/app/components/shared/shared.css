@@ -311,6 +311,9 @@ h3 {
 }
 
 .popup-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: rgb(38, 54, 70);
     height: 20%;
     width: 100%;
