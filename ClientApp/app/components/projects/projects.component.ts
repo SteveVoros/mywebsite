@@ -49,22 +49,27 @@ export class ProjectsComponent extends AutoScrollAfterLoading {
     onClickProject02() {
         this.displayPopupBackground = 'initial';
         this.displayPopup02 = 'initial';
+        this.renderer.setStyle(document.body, 'overflow', 'hidden');
     }
     onClickProject03() {
         this.displayPopupBackground = 'initial';
         this.displayPopup03 = 'initial';
+        this.renderer.setStyle(document.body, 'overflow', 'hidden');
     }
     onClickProject04() {
         this.displayPopupBackground = 'initial';
         this.displayPopup04 = 'initial';
+        this.renderer.setStyle(document.body, 'overflow', 'hidden');
     }
     onClickProject05() {
         this.displayPopupBackground = 'initial';
         this.displayPopup05 = 'initial';
+        this.renderer.setStyle(document.body, 'overflow', 'hidden');
     }
     onClickProject06() {
         this.displayPopupBackground = 'initial';
         this.displayPopup06 = 'initial';
+        this.renderer.setStyle(document.body, 'overflow', 'hidden');
     }
 
     closePopup() {
@@ -81,6 +86,7 @@ export class ProjectsComponent extends AutoScrollAfterLoading {
             this.visuallyHiddenPopup05 = true;
         else if (this.displayPopup06 == 'initial')
             this.visuallyHiddenPopup06 = true;
+        this.renderer.setStyle(document.body, 'overflow', 'initial');
     }
 
     onTransitionEndPopup() {
