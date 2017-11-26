@@ -22,6 +22,14 @@
             </div>
             <img [src]="imageUrlTile02" alt="">
         </button>
+        <button class="project-tile" (click)="onClickProject06()">
+            <div class="tile-title">
+                <h3>App Development</h3>
+                <small>.NET and .NET Core</small>
+            </div>
+            <img [src]="imageUrlTile05" alt="">
+            <!-- <div id="tileImgPaperclip" class="glyphicon glyphicon-paperclip"></div> -->
+        </button>
         <button class="project-tile" (click)="onClickProject03()">
             <div class="tile-title">
                 <h3>oneremains</h3>
@@ -42,13 +50,6 @@
                 <small>Angular | .NET Core</small>
             </div>
             <img id="tileImgSJV" src="https://fontmeme.com/permalink/171122/ebee12606cb18066ae5dca71e16370eb.png" alt="">
-        </button>
-        <button class="project-tile" (click)="onClickProject06()">
-            <div class="tile-title">
-                <h3>.NET vs. .NET Core</h3>
-                <small>Miscallaneous</small>
-            </div>
-            <div id="tileImgPaperclip" class="glyphicon glyphicon-paperclip"></div>
         </button>
     </div>
     <div class="popup-background" [class.visually-hidden-background]="visuallyHiddenPopupBackground" [style.display]="displayPopupBackground"
@@ -169,25 +170,26 @@
                 <span>x</span>
             </button>
             <div class="popup-header">
-                <h2 class="text-center">.NET vs. .NET Core</h2>
+                <h2 class="text-center">.NET and .NET Core</h2>
             </div>
             <div class="popup-body">
-                <h3>.NET vs. .NET Core</h3>
-                <p>As of the end of 2017, I tend to use .NET Core rather than .NET whenever it comes to the creation of something
-                    from the ground up. While .NET Core libraries are slightly immature compared to the ones of .NET used
-                    for years, its cross-platform capabilities are definitely a huge advantage.</p>
-                <h3>ASP.NET MVC vs. ASP.NET Core 2.0</h3>
+                <h3>.NET and .NET Core</h3>
+                <p>As of Nov 2017, I tend to use .NET Core rather than .NET whenever it comes to the creation of an app from
+                    the ground up. While .NET Core libraries are slightly immature compared to the ones of .NET used for
+                    years, its simplified libraries and cross-platform capabilities are definitely a huge advantage.</p>
+                <h3>ASP.NET MVC and ASP.NET Core 2.0</h3>
                 <p>I first started working with ASP.NET MVC and, with time, continued using ASP.NET Core 2.0 more and more.
                     When a new back-end needs to be created from scratch, I always suggest using .NET Core-based technologies
                     instead of the conventional ones tied to Windows. ASP.NET Core has several advantages over ASP.NET MVC.
                     For example, it has its own dependency injection manager and Web API and MVC have been merged into one
                     module. As both technologies are very similar to one another despite these basic differences, I am happy
                     to help my clients with older versions of .NET as well.</p>
-                <h3>Entity Framework vs. Entity Framework Core</h3>
+                <h3>Entity Framework and Entity Framework Core</h3>
                 <p>As of Nov 2017, Entity Framework Core's library is slightly less mature than the traditional Windows-based
-                    one. However, I have not faced any significant difficulties that would have made the implementation
-                    too hard. Again, both frameworks are very similar and, hence, I can use either one depending on the project's
-                    needs.</p>
+                    one. However, I have not faced any larger difficulties that would have made the implementation significantly
+                    harder or more time-consuming. Again, both frameworks are very similar and, hence, I can use either one
+                    depending on the project's needs.
+                </p>
             </div>
         </div>
     </div>

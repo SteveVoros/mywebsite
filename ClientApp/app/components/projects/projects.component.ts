@@ -12,6 +12,7 @@ export class ProjectsComponent extends AutoScrollAfterLoading {
     imageUrlTile02: string;
     imageUrlTile03: string;
     imageUrlTile04: string;
+    imageUrlTile05: string;
     baseUrl: string;
 
     displayPopupBackground: string = 'none';
@@ -37,6 +38,7 @@ export class ProjectsComponent extends AutoScrollAfterLoading {
         this.imageUrlTile02 = this.baseUrl + 'img/tile-cloud-AWS.png';
         this.imageUrlTile03 = this.baseUrl + 'img/oneremains.png';
         this.imageUrlTile04 = this.baseUrl + 'img/trading.jpg';
+        this.imageUrlTile05 = this.baseUrl + 'img/net.svg';
     }
 
     onClickProject01() {
