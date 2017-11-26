@@ -479,9 +479,10 @@ h3 {
     }
     .popup-body {
         padding: 40px;
+        padding-top: 30px;
     }
     .popup-md-small {
-        top: 50vh;
+        top: 40vh;
         width: 500px;
         height: auto;
         margin-left: -250px;
