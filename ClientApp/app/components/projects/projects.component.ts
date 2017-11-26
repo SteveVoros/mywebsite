@@ -1,4 +1,4 @@
-import { Component, Inject } from '@angular/core';
+import { Component, Inject, Renderer2 } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { AutoScrollAfterLoading } from '../shared/AutoScrollAfterLoading';
 
@@ -31,7 +31,7 @@ export class ProjectsComponent extends AutoScrollAfterLoading {
     visuallyHiddenPopup05: boolean = false;
     visuallyHiddenPopup06: boolean = false;
 
-    constructor(route: ActivatedRoute, @Inject('BASE_URL') baseUrl: string) {
+    constructor(route: ActivatedRoute, @Inject('BASE_URL') baseUrl: string, private renderer: Renderer2) {
         super(route);
         this.baseUrl = baseUrl;
         this.imageUrlTile01 = this.baseUrl + 'img/tile-cloud.png';
@@ -44,6 +44,7 @@ export class ProjectsComponent extends AutoScrollAfterLoading {
     onClickProject01() {
         this.displayPopupBackground = 'initial';
         this.displayPopup01 = 'initial';
+        this.renderer.setStyle(document.body, 'overflow', 'hidden');
     }
     onClickProject02() {
         this.displayPopupBackground = 'initial';
