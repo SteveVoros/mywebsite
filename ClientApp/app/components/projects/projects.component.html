@@ -45,7 +45,7 @@
         </button>
         <button class="project-tile" (click)="onClickProject06()">
             <div class="tile-title">
-                <h3>Other</h3>
+                <h3>.NET vs. .NET Core</h3>
                 <small>Miscallaneous</small>
             </div>
             <div id="tileImgPaperclip" class="glyphicon glyphicon-paperclip"></div>
@@ -163,19 +163,31 @@
                     integration and development with Azure Web Apps.</p>
             </div>
         </div>
-        <div class="popup popup-md-small" [class.visually-hidden-popup]="visuallyHiddenPopup06" [style.display]="displayPopup06"
-            (click)="$event.stopPropagation();" (animationend)="onTransitionEndPopup()">
+        <div class="popup" [class.visually-hidden-popup]="visuallyHiddenPopup06" [style.display]="displayPopup06" (click)="$event.stopPropagation();"
+            (animationend)="onTransitionEndPopup()">
             <button class="popup-close-button" (click)="closePopup()">
                 <span>x</span>
             </button>
             <div class="popup-header">
-                <h2 class="text-center">Other</h2>
+                <h2 class="text-center">.NET vs. .NET Core</h2>
             </div>
             <div class="popup-body">
-                <h3>Subtitle</h3>
-                <p>asdf asdlkfhlak fhdlaksh lkfahds lkhlfk hfkda lhskhlf fdas</p>
-                <h3>Subtitle</h3>
-                <p>asdf asdlkfhlak fhdlaksh lkfahds lkhlfk hfkda lhskhlf fdas</p>
+                <h3>.NET vs. .NET Core</h3>
+                <p>As of the end of 2017, I tend to use .NET Core rather than .NET whenever it comes to the creation of something
+                    from the ground up. While .NET Core libraries are slightly immature compared to the ones of .NET used
+                    for years, its cross-platform capabilities are definitely a huge advantage.</p>
+                <h3>ASP.NET MVC vs. ASP.NET Core 2.0</h3>
+                <p>I first started working with ASP.NET MVC and, with time, continued using ASP.NET Core 2.0 more and more.
+                    When a new back-end needs to be created from scratch, I always suggest using .NET Core-based technologies
+                    instead of the conventional ones tied to Windows. ASP.NET Core has several advantages over ASP.NET MVC.
+                    For example, it has its own dependency injection manager and Web API and MVC have been merged into one
+                    module. As both technologies are very similar to one another despite these basic differences, I am happy
+                    to help my clients with older versions of .NET as well.</p>
+                <h3>Entity Framework vs. Entity Framework Core</h3>
+                <p>As of Nov 2017, Entity Framework Core's library is slightly more immature than the traditional Windows-based
+                    one. However, I have not faced any significant difficulty so far that would have been made the implementation
+                    too hard.Again, both frameworks are very similar and, hence, I can use either one depending on the project's
+                    needs.</p>
             </div>
         </div>
     </div>
