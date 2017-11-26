@@ -1,5 +1,5 @@
 import {
-    Component
+    Component, HostListener, ViewChild, ElementRef, OnInit
 } from '@angular/core';
 import { ContactService } from '../services/ContactService';
 
@@ -9,7 +9,8 @@ import { ContactService } from '../services/ContactService';
     styleUrls: ['./app.component.css']
 })
 
-export class AppComponent {
+export class AppComponent implements OnInit {
+    visibleContactButtons: string = 'hidden';
     displayBackground: string = 'none';
     displayContactToasty: string = 'none';
     displayMessageToasty: string = 'none';
@@ -18,10 +19,23 @@ export class AppComponent {
     visuallyHiddenMessageToasty: boolean = false;
     message: string;
 
+    @ViewChild('content') mainContent: ElementRef;
+
     constructor(private contactService: ContactService) {
         contactService.onContactResponse$.subscribe(message => {
             this.openMessageToasty(message);
         });
+    }
+
+    ngOnInit() {
+        const componentPosition = this.mainContent.nativeElement.offsetTop;
+        const scrollPosition = window.pageYOffset;
+
+        if (scrollPosition >= componentPosition) {
+            this.visibleContactButtons = 'initial';
+        } else {
+            this.visibleContactButtons = 'hidden';
+        }
     }
 
     openContactToasty() {
@@ -61,7 +75,15 @@ export class AppComponent {
         }
     }
 
-    closeBackground() {
+    @HostListener('window:scroll', ['$event'])
+    checkScroll() {
+        const componentPosition = this.mainContent.nativeElement.offsetTop;
+        const scrollPosition = window.pageYOffset;
 
+        if (scrollPosition >= componentPosition) {
+            this.visibleContactButtons = 'initial';
+        } else {
+            this.visibleContactButtons = 'hidden';
+        }
     }
 }

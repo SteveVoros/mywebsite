@@ -1,5 +1,5 @@
 <div class="container-fluid main-container">
-    <div class="fixed-contact hidden-xs">
+    <div class="fixed-contact" [style.visibility]="visibleContactButtons">
         <button class="callme-button" (click)="openContactToasty()">
             <span class="glyphicon glyphicon-earphone phone"></span>
         </button>
@@ -45,7 +45,7 @@
         <div class="col-sm-3 no-intrusion">
             <sidebar></sidebar>
         </div>
-        <div class="col-sm-9 body-content">
+        <div #content class="col-sm-9 body-content">
             <router-outlet></router-outlet>
         </div>
     </div>
