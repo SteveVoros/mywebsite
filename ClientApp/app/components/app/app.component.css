@@ -1,5 +1,5 @@
 .main-container {
-    font-family: 'Open Sans', 'HelveticaNeue-Light','Helvetica Neue Light','Helvetica Neue',Helvetica,Arial,sans-serif;
+    font-family: 'Open Sans', 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     font-weight: 400;
 }
 
@@ -19,7 +19,7 @@
     position: fixed;
     left: 0;
     top: 0;
-    height:100vh;
+    height: 100vh;
     width: 100vmax;
     z-index: 4;
     animation-name: fadeInToastyBackground;
@@ -27,8 +27,12 @@
 }
 
 @keyframes fadeInToastyBackground {
-    from {background-color: rgba(0, 0, 0, 0);}
-    to {background-color: rgba(0, 0, 0, 0.92);}
+    from {
+        background-color: rgba(0, 0, 0, 0);
+    }
+    to {
+        background-color: rgba(0, 0, 0, 0.92);
+    }
 }
 
 .visually-hidden-background {
@@ -38,8 +42,12 @@
 }
 
 @keyframes fadeOut {
-    from {background-color: rgba(0, 0, 0, 0.92);}
-    to {background-color: rgba(0, 0, 0, 0);}
+    from {
+        background-color: rgba(0, 0, 0, 0.92);
+    }
+    to {
+        background-color: rgba(0, 0, 0, 0);
+    }
 }
 
 .toasty {
@@ -90,9 +98,21 @@
 }
 
 @keyframes slideInToasty {
-    0% { opacity: 0; transform: translateY(-100%); offset: 0; }
-    30% { opacity: 1; transform: translateY(15px); offset: 0.3; }
-    100% { opacity: 1; transform: translateY(0); offset: 1; }
+    0% {
+        opacity: 0;
+        transform: translateY(-100%);
+        offset: 0;
+    }
+    30% {
+        opacity: 1;
+        transform: translateY(15px);
+        offset: 0.3;
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+        offset: 1;
+    }
 }
 
 .visually-hidden-toasty {
@@ -101,9 +121,21 @@
 }
 
 @keyframes slideOutToasty {
-    0% { opacity: 1; transform: translateY(0); offset: 0; }
-    30% { opacity: 0.7; transform: translateY(15px); offset: 0.7; }
-    100% { opacity: 0; transform: translateY(-100%); offset: 1; }
+    0% {
+        opacity: 1;
+        transform: translateY(0);
+        offset: 0;
+    }
+    30% {
+        opacity: 0.7;
+        transform: translateY(15px);
+        offset: 0.7;
+    }
+    100% {
+        opacity: 0;
+        transform: translateY(-100%);
+        offset: 1;
+    }
 }
 
 .toasty-hireme-header {
@@ -193,10 +225,11 @@
     font-weight: 600;
     line-height: 1;
     text-shadow: 0px 1px 1px rgb(133, 128, 128);
-    transform:scale(1.2,1);
+    transform: scale(1.2, 1);
     display: inline-block;
 }
-.toasty-close-button span:hover { 
+
+.toasty-close-button span:hover {
     color: rgb(29, 28, 28);
     text-shadow: 0px 1px rgb(133, 128, 128);
 }
@@ -204,10 +237,10 @@
 .fixed-contact {
     box-sizing: border-box;
     position: fixed;
-    top: 50px;
-    right: 50px;
-    width: 250px;
-    height: 62px;
+    top: 30px;
+    right: 30px;
+    width: 155px;
+    height: 50px;
     border: 0;
     z-index: 3;
     padding: 0;
@@ -217,13 +250,13 @@
 }
 
 .callme-button {
-    font-size: 30px;
+    font-size: 18px;
     background-color: rgba(0, 0, 0, 0.048);
     padding-top: 13px;
     padding-right: 14px;
     padding-bottom: 12px;
     padding-left: 14px;
-    height: 62px;
+    height: 50px;
     color: rgba(39, 55, 71, 0.74);
     text-align: center;
     border-style: solid;
@@ -256,15 +289,15 @@
     color: #FFF;
     border-radius: 50px;
     font-weight: 400;
-    font-size: 20px;
-    padding-right: 25px;
-    padding-left: 25px;
+    font-size: 12px;
+    padding-right: 12px;
+    padding-left: 12px;
     border: 2px solid rgba(236, 8, 92, 0.959);
     -webkit-transition: all .5s;
     transition: all .5s;
     text-decoration: none;
     order: 2;
-    line-height: 55px;
+    line-height: 45px;
     text-align: center;
 }
 
@@ -277,6 +310,54 @@
 @media (min-width: 576px) {
     .body-content {
         padding: 50px 50px;
+    }
+    .fixed-contact {
+        box-sizing: border-box;
+        position: fixed;
+        top: 50px;
+        right: 50px;
+        width: 250px;
+        height: 62px;
+        border: 0;
+        z-index: 3;
+        padding: 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .callme-button {
+        font-size: 30px;
+        background-color: rgba(0, 0, 0, 0.048);
+        padding-top: 13px;
+        padding-right: 14px;
+        padding-bottom: 12px;
+        padding-left: 14px;
+        height: 62px;
+        color: rgba(39, 55, 71, 0.74);
+        text-align: center;
+        border-style: solid;
+        border-width: 2px;
+        border-color: rgba(39, 55, 71, 0.74);
+        border-radius: 50%;
+        -webkit-transition: all .5s;
+        transition: all .5s;
+        order: 1;
+    }
+    .hireme {
+        background: rgba(236, 8, 92, 0.959);
+        color: #FFF;
+        border-radius: 50px;
+        font-weight: 400;
+        font-size: 20px;
+        padding-right: 25px;
+        padding-left: 25px;
+        border: 2px solid rgba(236, 8, 92, 0.959);
+        -webkit-transition: all .5s;
+        transition: all .5s;
+        text-decoration: none;
+        order: 2;
+        line-height: 55px;
+        text-align: center;
     }
 }
 
