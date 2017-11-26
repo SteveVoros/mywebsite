@@ -2,6 +2,7 @@ import {
     Component, HostListener, ViewChild, ElementRef, OnInit
 } from '@angular/core';
 import { ContactService } from '../services/ContactService';
+import { AfterViewInit } from '@angular/core/src/metadata/lifecycle_hooks';
 
 @Component({
     selector: 'app',
@@ -9,7 +10,7 @@ import { ContactService } from '../services/ContactService';
     styleUrls: ['./app.component.css']
 })
 
-export class AppComponent implements OnInit {
+export class AppComponent implements AfterViewInit {
     visibleContactButtons: string = 'hidden';
     displayBackground: string = 'none';
     displayContactToasty: string = 'none';
@@ -27,7 +28,7 @@ export class AppComponent implements OnInit {
         });
     }
 
-    ngOnInit() {
+    ngAfterViewInit() {
         const componentPosition = this.mainContent.nativeElement.offsetTop;
         const scrollPosition = window.pageYOffset;
 
