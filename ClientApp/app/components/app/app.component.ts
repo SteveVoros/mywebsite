@@ -29,14 +29,16 @@ export class AppComponent implements AfterViewInit {
     }
 
     ngAfterViewInit() {
-        const componentPosition = this.mainContent.nativeElement.offsetTop;
-        const scrollPosition = window.pageYOffset;
+        let componentPosition = this.mainContent.nativeElement.offsetTop;
+        let scrollPosition = window.pageYOffset;
 
-        if (scrollPosition >= componentPosition) {
-            this.visibleContactButtons = 'initial';
-        } else {
-            this.visibleContactButtons = 'hidden';
-        }
+        setTimeout(() => {
+            if (scrollPosition >= componentPosition) {
+                this.visibleContactButtons = 'initial';
+            } else {
+                this.visibleContactButtons = 'hidden';
+            }
+        });
     }
 
     openContactToasty() {
