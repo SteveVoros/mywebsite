@@ -1,5 +1,16 @@
+@font-face {
+    font-family: 'Helvetica Neue Light';
+    src: local("Helvetica Neue Light"), local("HelveticaNeue-Light");
+    src: url(/fonts/helveticaneuelight.ttf);
+}
+
+@font-face {
+    font-family: 'Liberation Sans';
+    src: url(/fonts/LiberationSans-Regular.ttf);
+}
+
 .main-container {
-    font-family: 'Open Sans', 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-family: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', 'Helvetica', 'Roboto', Arial, sans-serif;
     font-weight: 400;
 }
 
