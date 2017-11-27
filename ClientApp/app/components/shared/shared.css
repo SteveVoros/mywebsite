@@ -39,7 +39,7 @@
 }
 
 .img-lg {
-    width: 300px;
+    width: 100%;
     height: auto;
     padding-top: 10px;
     padding-bottom: 10px;
@@ -390,6 +390,9 @@ h3 {
         width: 150px;
         margin-top: 40px;
         margin-bottom: 40px;
+    }
+    .img-lg {
+        width: 300px;
     }
     .selector-container {
         margin-top: 30px;
