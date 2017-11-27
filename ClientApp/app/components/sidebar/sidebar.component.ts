@@ -7,12 +7,18 @@ import { ActivatedRoute } from '@angular/router';
     styleUrls: ['./sidebar.component.css']
 })
 export class SidebarComponent {
+    linkedinPicUrl: string;
+    twitterPicUrl: string;
+    emailPicUrl: string;
     baseUrl: string;
     profilePicUrl: string;
 
     constructor( private route: ActivatedRoute, @Inject('BASE_URL') baseUrl: string) {
         this.baseUrl = baseUrl;
         this.profilePicUrl = this.baseUrl + 'img/profile_pic.jpg';
+        this.emailPicUrl = this.baseUrl + 'img/social_email.svg';
+        this.twitterPicUrl = this.baseUrl + 'img/social_twitter.svg';
+        this.linkedinPicUrl = this.baseUrl + 'img/social_linkedin.svg';
     }
 
     onAnchorClick() {
