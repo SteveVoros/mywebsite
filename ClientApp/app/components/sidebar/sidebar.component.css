@@ -67,6 +67,11 @@
     letter-spacing: 1.4px;
 }
 
+.header {
+    height: 100vmax;
+    min-height: 650px;
+}
+
 .main-navigation {
     margin: 40px 0px 0px 0px;
 }
@@ -138,10 +143,6 @@ li.link-active a:visited {
         margin-right: 0px;
     }
 
-    .header {
-        position: fixed;
-    }
-
     #main-nav ul li a:hover {
         color: rgb(143, 189, 233);
     }
@@ -160,6 +161,7 @@ li.link-active a:visited {
     }
     /* On mid-large screens, convert the nav menu to a vertical sidebar */
     .header {
+        position: fixed;
         height: 100%;
         width: calc(25% - 20px);
     }
