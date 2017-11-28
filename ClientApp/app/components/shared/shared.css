@@ -262,7 +262,6 @@ h3 {
     margin-top: -35vh;
     z-index: 4;
     border-radius: 6px 6px 5px 5px;
-    font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     transition: all 0.5s;
     animation-name: slideInPopup;
     animation-duration: 0.3s;
@@ -320,6 +319,7 @@ h3 {
     text-align: center;
     border-radius: 5px 5px 0 0;
     color: white;
+    font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 .popup-body {

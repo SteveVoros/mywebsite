@@ -1,5 +1,5 @@
 import {
-    Component, HostListener, ViewChild, ElementRef, OnInit
+    Component, HostListener, ViewChild, ElementRef, OnInit, Renderer2
 } from '@angular/core';
 import { ContactService } from '../services/ContactService';
 import { AfterViewInit } from '@angular/core/src/metadata/lifecycle_hooks';
@@ -22,7 +22,7 @@ export class AppComponent implements AfterViewInit {
 
     @ViewChild('content') mainContent: ElementRef;
 
-    constructor(private contactService: ContactService) {
+    constructor(private contactService: ContactService, private renderer: Renderer2) {
         contactService.onContactResponse$.subscribe(message => {
             this.openMessageToasty(message);
         });
@@ -44,6 +44,7 @@ export class AppComponent implements AfterViewInit {
     openContactToasty() {
         this.displayContactToasty = 'initial';
         this.displayBackground = 'initial';
+        this.renderer.setStyle(document.body, 'overflow', 'hidden');
     }
 
     closeToasty() {
@@ -52,6 +53,7 @@ export class AppComponent implements AfterViewInit {
         else
             this.visuallyHiddenMessageToasty = true;
         this.visuallyHiddenBackground = true;
+        this.renderer.setStyle(document.body, 'overflow', 'initial');
     }
 
     onTransitionEndContactToasty() {
@@ -67,6 +69,7 @@ export class AppComponent implements AfterViewInit {
         this.displayMessageToasty = 'initial';
         this.displayBackground = 'initial';
         this.message = message;
+        this.renderer.setStyle(document.body, 'overflow', 'hidden');
     }
 
     onTransitionEndMessageToasty() {
