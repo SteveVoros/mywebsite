@@ -23,6 +23,7 @@ namespace mywebsite
         private static string GetKeyVaultEndpoint() => Environment.GetEnvironmentVariable("KEYVAULT_ENDPOINT");
         public static IWebHost BuildWebHost(string[] args) =>
             WebHost.CreateDefaultBuilder(args)
+                .UseApplicationInsights()
                 .ConfigureAppConfiguration((ctx, builder) =>
                 {
                     var keyVaultEndpoint = GetKeyVaultEndpoint();
