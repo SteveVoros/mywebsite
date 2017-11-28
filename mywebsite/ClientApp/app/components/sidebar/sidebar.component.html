@@ -1,0 +1,54 @@
+<div class="intrude-less">
+    <div class="header">
+        <div id="header-profile">
+            <div id="profilepic-placeholder">
+                <a [routerLink]="['/home']">
+                    <img [src]="profilePicUrl" id="profilepicture" class="img-circle" alt="Profile picture">
+                </a>
+                <h1>Steven Voros</h1>
+                <p class="subtitle-md">Full-stack .NET
+                    <br/>Developer</p>
+                <p class="subtitle-sm">Full-stack
+                    <br/>.NET Developer</p>
+                <p></p>
+                <p>Azure Solutions
+                    <br/> Consultant</p>
+            </div>
+            <div id="main-nav">
+                <ul class="main-navigation">
+                    <li [routerLinkActive]="['link-active']">
+                        <a [routerLink]="['/about']" fragment="title" (click)="onAnchorClick()">
+                            About
+                        </a>
+                    </li>
+                    <li [routerLinkActive]="['link-active']">
+                        <a [routerLink]="['/projects']" fragment="title" (click)="onAnchorClick()">
+                            Projects
+                        </a>
+                    </li>
+                    <li [routerLinkActive]="['link-active']">
+                        <a [routerLink]="['/contact']" fragment="title" (click)="onAnchorClick()">
+                            Contact
+                        </a>
+                    </li>
+                    <li [routerLinkActive]="['link-active']">
+                        <a [routerLink]="['/blog']" fragment="title" (click)="onAnchorClick()">
+                            Blog
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div id="sub-nav">
+                <a href="mailto:stevenjvoros@gmail.com">
+                    <img [src]="emailPicUrl" class="social-button" alt="Email">
+                </a>
+                <a href="https://twitter.com/StevenVoros88" target="_blank">
+                    <img [src]="twitterPicUrl" class="social-button" alt="Twitter">
+                </a>
+                <a href="https://www.linkedin.com/in/steven-voros-355ab24a" target="_blank">
+                    <img [src]="linkedinPicUrl" class="social-button" alt="Linkedin">
+                </a>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,348 @@
+@font-face {
+    font-family: 'Helvetica Neue Light';
+    src: local("Helvetica Neue Light"), local("HelveticaNeue-Light");
+    src: url(/fonts/helveticaneuelight.ttf);
+}
+
+@font-face {
+    font-family: 'Liberation Sans';
+    src: url(/fonts/LiberationSans-Regular.ttf);
+}
+
+.main-container {
+    font-family: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', 'Helvetica', 'Roboto', Arial, sans-serif;
+    font-weight: 400;
+}
+
+.no-intrusion {
+    box-sizing: border-box;
+    padding: 0;
+    border: 0;
+}
+
+.body-content {
+    padding: 20px 20px;
+    margin: 0;
+}
+
+.toasty-background {
+    background-color: rgba(0, 0, 0, 0.92);
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100vh;
+    width: 100vmax;
+    z-index: 4;
+    animation-name: fadeInToastyBackground;
+    animation-duration: 0.3s;
+}
+
+@keyframes fadeInToastyBackground {
+    from {
+        background-color: rgba(0, 0, 0, 0);
+    }
+    to {
+        background-color: rgba(0, 0, 0, 0.92);
+    }
+}
+
+.visually-hidden-background {
+    background-color: rgba(0, 0, 0, 0);
+    animation-name: fadeOut;
+    animation-duration: 0.3s;
+}
+
+@keyframes fadeOut {
+    from {
+        background-color: rgba(0, 0, 0, 0.92);
+    }
+    to {
+        background-color: rgba(0, 0, 0, 0);
+    }
+}
+
+.toasty {
+    background-color: rgb(255, 255, 255);
+    position: fixed;
+    left: 50vw;
+    top: 40vh;
+    margin-left: -150px;
+    margin-top: -185px;
+    height: 370px;
+    width: 300px;
+    z-index: 4;
+    border-radius: 6px 6px 5px 5px;
+    font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    transition: all 0.5s;
+    animation-name: slideInToasty;
+    animation-duration: 0.3s;
+}
+
+.toasty-hireme {
+    left: 50vw;
+    top: 40vh;
+    margin-left: -150px;
+    margin-top: -185px;
+    height: 370px;
+    width: 300px;
+}
+
+.toasty-messagesent {
+    background-color: rgb(38, 54, 70);
+    color: white;
+    font-weight: 100;
+    padding: 30px 30px;
+    left: 50vw;
+    top: 40vh;
+    margin-left: -150px;
+    margin-top: -75px;
+    height: 150px;
+    width: 300px;
+    z-index: 5;
+    text-align: center;
+}
+
+.toasty-messagesent p {
+    margin-top: 10%;
+    margin-bottom: 10%;
+    letter-spacing: 2px;
+}
+
+@keyframes slideInToasty {
+    0% {
+        opacity: 0;
+        transform: translateY(-100%);
+        offset: 0;
+    }
+    30% {
+        opacity: 1;
+        transform: translateY(15px);
+        offset: 0.3;
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+        offset: 1;
+    }
+}
+
+.visually-hidden-toasty {
+    animation-name: slideOutToasty;
+    animation-duration: 0.3s;
+}
+
+@keyframes slideOutToasty {
+    0% {
+        opacity: 1;
+        transform: translateY(0);
+        offset: 0;
+    }
+    30% {
+        opacity: 0.7;
+        transform: translateY(15px);
+        offset: 0.7;
+    }
+    100% {
+        opacity: 0;
+        transform: translateY(-100%);
+        offset: 1;
+    }
+}
+
+.toasty-hireme-header {
+    background-color: rgb(38, 54, 70);
+    height: 33%;
+    width: 100%;
+    text-align: center;
+    border-radius: 5px 5px 0 0;
+}
+
+.toasty-hireme-header p {
+    color: white;
+    font-size: 20px;
+    line-height: 120px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.toasty-hireme-body {
+    padding: 20px;
+}
+
+.phone-number-container {
+    height: 60px;
+    border-bottom: 1px solid rgb(201, 198, 198);
+    font-size: 27px;
+    line-height: 40px;
+    padding: 0 20px;
+    text-align: center;
+    color: rgb(153, 153, 153);
+    font-weight: 500;
+}
+
+.phone-number {
+    padding: 0 0 0 10px;
+    color: rgb(51, 51, 51);
+}
+
+.business-hours-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px 10px;
+    font-size: 20px;
+}
+
+.business-hours-title {
+    color: rgb(51, 51, 51);
+}
+
+.business-hours {
+    width: 140px;
+    padding: 5px 0;
+    border: 0 0 0 10px;
+    color: rgb(153, 153, 153);
+}
+
+.business-days-title {
+    font-weight: 100;
+    font-size: 18px;
+    line-height: 15px;
+}
+
+.actual-hours {
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.toasty-close-button {
+    background-color: rgb(38, 54, 70);
+    position: absolute;
+    right: 10px;
+    top: 7px;
+    border: 0 transparent;
+}
+
+.toasty-close-button:active,
+.toasty-close-button:focus,
+.toasty-close-button:visited {
+    outline: none;
+}
+
+.toasty-close-button span {
+    color: rgb(36, 31, 31);
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1;
+    text-shadow: 0px 1px 1px rgb(133, 128, 128);
+    transform: scale(1.2, 1);
+    display: inline-block;
+}
+
+.toasty-close-button span:hover {
+    color: rgb(29, 28, 28);
+    text-shadow: 0px 1px rgb(133, 128, 128);
+}
+
+.fixed-contact {
+    box-sizing: border-box;
+    position: fixed;
+    top: 30px;
+    right: 30px;
+    width: 155px;
+    height: 50px;
+    border: 0;
+    z-index: 3;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.callme-button {
+    font-size: 18px;
+    background-color: rgba(0, 0, 0, 0.048);
+    padding-top: 13px;
+    padding-right: 14px;
+    padding-bottom: 12px;
+    padding-left: 14px;
+    height: 50px;
+    color: rgba(39, 55, 71, 0.74);
+    text-align: center;
+    border-style: solid;
+    border-width: 2px;
+    border-color: rgba(39, 55, 71, 0.74);
+    border-radius: 50%;
+    -webkit-transition: all .5s;
+    transition: all .5s;
+    order: 1;
+}
+
+.callme-button:hover {
+    background-color: rgba(39, 55, 71, 0.842);
+    color: rgb(169, 203, 236);
+    border-color: rgb(169, 203, 236);
+}
+
+.callme-button:active,
+.callme-button:focus,
+.callme-button:visited {
+    outline: none;
+}
+
+.phone {
+    top: 0;
+}
+
+.hireme {
+    background: rgba(236, 8, 92, 0.959);
+    color: #FFF;
+    border-radius: 50px;
+    font-weight: 400;
+    font-size: 12px;
+    padding-right: 12px;
+    padding-left: 12px;
+    border: 2px solid rgba(236, 8, 92, 0.959);
+    -webkit-transition: all .5s;
+    transition: all .5s;
+    text-decoration: none;
+    order: 2;
+    line-height: 45px;
+    text-align: center;
+}
+
+.hireme:hover {
+    border-color: rgb(169, 203, 236);
+    background-color: rgb(39, 55, 71);
+    color: rgb(169, 203, 236);
+}
+
+@media (min-width: 576px) {
+    .body-content {
+        padding: 50px 50px;
+    }
+    .fixed-contact {
+        top: 50px;
+        right: 50px;
+        width: 250px;
+        height: 62px;
+    }
+    .callme-button {
+        font-size: 30px;
+        height: 62px;
+    }
+    .hireme {
+        border-radius: 50px;
+        font-size: 20px;
+        padding-right: 25px;
+        padding-left: 25px;
+        line-height: 55px;
+    }
+}
+
+@media (min-width: 1041px) {
+    .body-content {
+        padding: 30px 60px;
+    }
+}

@@ -1,0 +1,52 @@
+<div class="container-fluid main-container">
+    <div class="fixed-contact" [style.visibility]="visibleContactButtons">
+        <button class="callme-button" (click)="openContactToasty()">
+            <span class="glyphicon glyphicon-earphone phone"></span>
+        </button>
+        <a [routerLink]="['/contact']" fragment="title" class="hireme">
+            Hire me now
+        </a>
+    </div>
+    <div class="toasty-background" [class.visually-hidden-background]="visuallyHiddenBackground" [style.display]="displayBackground" (click)="closeToasty()">
+        <div class="toasty toasty-hireme" [class.visually-hidden-toasty]="visuallyHiddenContactToasty" [style.display]="displayContactToasty" (click)="$event.stopPropagation();" (animationend)="onTransitionEndContactToasty()">
+            <div class="toasty-hireme-header">
+                <button class="toasty-close-button" (click)="closeToasty()">
+                    <span>x</span>
+                </button>
+                <p>Give Me a Call</p>
+            </div>
+            <div class="toasty-hireme-body">
+                <div class="phone-number-container">
+                    <p>+1
+                        <a href="tel:+13125229393"><span class="phone-number">312 522 9393</span></a>
+                    </p>
+                </div>
+                <div class="business-hours-container">
+                    <div class="business-hours-title">
+                        <p>Contact hours</p>
+                    </div>
+                    <div class="business-hours">
+                        <p class="business-days-title">Mon - Fri</p>
+                        <p class="actual-hours">9:00 - 22:00</p>
+                        <p class="business-days-title">Sat - Sun</p>
+                        <p class="actual-hours">10:00 - 18:00</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="toasty toasty-messagesent" [class.visually-hidden-toasty]="visuallyHiddenMessageToasty" [style.display]="displayMessageToasty" (click)="$event.stopPropagation();" (animationend)="onTransitionEndMessageToasty()">
+            <button class="toasty-close-button" (click)="closeToasty()">
+                <span>x</span>
+            </button>
+            <p>{{ message }}</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-3 no-intrusion">
+            <sidebar></sidebar>
+        </div>
+        <div #content class="col-sm-9 body-content">
+            <router-outlet></router-outlet>
+        </div>
+    </div>
+</div>

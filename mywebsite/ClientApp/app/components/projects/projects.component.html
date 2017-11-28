@@ -1,0 +1,196 @@
+<div class="content">
+    <h1 id="title" class="content-title">Projects</h1>
+    <h2 class="text-center">About My Work</h2>
+    <p class="content-paragraph content-paragraph-centered">On this page, you can find information about some of my previous projects. The 'about' page also gives you insight into
+        the type of services I can provide and the technologies I usually use in my work.</p>
+    <p class="content-paragraph content-paragraph-centered">While my projects are usually bound to some type of confidentiality with my clients, I am happy to give you a high-level
+        overview of my portfolio.</p>
+    <p class="separator"></p>
+    <h2 class="text-center">Portfolio</h2>
+    <div class="projects-container text-center">
+        <button class="project-tile" (click)="onClickProject01()">
+            <div class="tile-title">
+                <h3>Cloud Solutions</h3>
+                <small>Azure</small>
+            </div>
+            <img [src]="imageUrlTile01" alt="">
+        </button>
+        <button class="project-tile" (click)="onClickProject02()">
+            <div class="tile-title">
+                <h3>Cloud Migration</h3>
+                <small>AWS | Azure</small>
+            </div>
+            <img [src]="imageUrlTile02" alt="">
+        </button>
+        <button class="project-tile" (click)="onClickProject06()">
+            <div class="tile-title">
+                <h3>App Development</h3>
+                <small>.NET and .NET Core</small>
+            </div>
+            <img [src]="imageUrlTile05" alt="">
+            <!-- <div id="tileImgPaperclip" class="glyphicon glyphicon-paperclip"></div> -->
+        </button>
+        <button class="project-tile" (click)="onClickProject03()">
+            <div class="tile-title">
+                <h3>oneremains</h3>
+                <small>Online Gaming Platform</small>
+            </div>
+            <img id="tileImgOneremains" [src]="imageUrlTile03" alt="">
+        </button>
+        <button class="project-tile" (click)="onClickProject04()">
+            <div class="tile-title">
+                <h3>Stock Trading App</h3>
+                <small>.NET</small>
+            </div>
+            <img [src]="imageUrlTile04" alt="">
+        </button>
+        <button class="project-tile" (click)="onClickProject05()">
+            <div class="tile-title">
+                <h3>This Website</h3>
+                <small>Angular | .NET Core</small>
+            </div>
+            <img id="tileImgSJV" src="https://fontmeme.com/permalink/171122/ebee12606cb18066ae5dca71e16370eb.png" alt="">
+        </button>
+    </div>
+    <div class="popup-background" [class.visually-hidden-background]="visuallyHiddenPopupBackground" [style.display]="displayPopupBackground"
+        (click)="closePopup()">
+        <div class="popup" [class.visually-hidden-popup]="visuallyHiddenPopup01" [style.display]="displayPopup01" (click)="$event.stopPropagation();"
+            (animationend)="onTransitionEndPopup()">
+            <button class="popup-close-button" (click)="closePopup()">
+                <span>x</span>
+            </button>
+            <div class="popup-header">
+                <h2>Azure Cloud Solutions</h2>
+            </div>
+            <div class="popup-body">
+                <h3>Architectural and Infrastructural Design</h3>
+                <p>Depending on the specific needs of a project, there are simplier and more cost-effective ways of creating
+                    the same product. Azure provides many paths including virtual machines, web/mobile/logic/API apps, microservices
+                    - just to name a few. Architectural and infrastructural designs are the first and most crucial steps
+                    before the actual implementation of a solution. I have provided several hours of consultation and also
+                    have hands-on experience with complete projects that required the design and creation of cloud solutions
+                    for small- to mid-size start-ups from the ground up.</p>
+                <h3>Hybrid and Pure-cloud Solutions</h3>
+                <p>One of the main strengths of Azure is its support for hybrid solutions, i.e. on-premises networks connected
+                    to virtual networks in the cloud. This can be an ideal path when a company wants to keep certain data
+                    on its private servers or uses Windows Active Directory to manage different entities while also enabling
+                    SSO (Single Sign-on) when using third-party software. I have had projects using Azure logic apps to connect
+                    to local SQL databases, set up connections between virtual networks and on-premises ones and also have
+                    experience with B2B and B2C Azure Active Directory solutions.</p>
+                <h3>Microservices</h3>
+                <p>Microservices are the newest buzzword in cloud technology. I have been experiencing a surge in demand in
+                    microservices since the second half of 2017. While microservices have tremendous power when it comes
+                    to scalability and cost saving, they require a totally different approach to software development and
+                    maintanance and are usually not ideal for a large portion of small to mid-size web applications present
+                    today. During one of my projects in 2017, although my client finally decided to use conventional approaches
+                    rather than microservices, I had the chance to make experiments with Azure capabilities regarding this
+                    field. I also keep myself up-to-date with Azure's newest advencements and can give you detailed information
+                    on Azure's capabilities with microservices when needed.</p>
+            </div>
+        </div>
+        <div class="popup popup-md-small" [class.visually-hidden-popup]="visuallyHiddenPopup02" [style.display]="displayPopup02"
+            (click)="$event.stopPropagation();" (animationend)="onTransitionEndPopup()">
+            <button class="popup-close-button" (click)="closePopup()">
+                <span>x</span>
+            </button>
+            <div class="popup-header">
+                <h2 class="text-center">Cloud Migration</h2>
+            </div>
+            <div class="popup-body">
+                <h3>AWS to Azure Migration</h3>
+                <p>As Azure is trying to be more competitive with AWS, I see an increasing demand in partial and complete migrations
+                    from AWS to Azure. Also, as some third-party service providers work with clients using different cloud
+                    platforms, third-party providers need working solutions on different cloud platforms, i.e. hybrid-cloud
+                    solutions.
+                </p>
+                <p>I managed a complete AWS-to-Azure migration including virtual machine, data and database migration (using
+                    private VPN connection between virtual networks), and infrastructure replication.</p>
+            </div>
+        </div>
+        <div class="popup" [class.visually-hidden-popup]="visuallyHiddenPopup03" [style.display]="displayPopup03" (click)="$event.stopPropagation();"
+            (animationend)="onTransitionEndPopup()">
+            <button class="popup-close-button" (click)="closePopup()">
+                <span>x</span>
+            </button>
+            <div class="popup-header">
+                <h2 class="text-center">oneremains</h2>
+            </div>
+            <div class="popup-body">
+                <h3>Online Gaming Platform</h3>
+                <p>During 2016, I founded a start-up company named oneremains with the goal to create a multiplayer online gaming
+                    platform combining skill- and logic-based games in a single mobile app, enabling players to participate
+                    in both monetary and non-monetary tournaments across the world. The project involved a high level of
+                    international project management through offices in Germany and the US and the coordination of suppliers
+                    through the development of a diverse set of games.</p>
+                <h3>Technologies</h3>
+                <p>While the project had to be ended due to financial difficulties at the end of 2016, I learnt a tremendous
+                    amount of invaluable information and gained significant hands-on experience with mainstream technologies.
+                    The project included the design and development of a complex and scalable back-end architecture using
+                    continuous web-socket communication among different application layers in Amazon AWS using Node.js, multiplayer
+                    networking with client applications using Unity3D built on .NET.</p>
+            </div>
+        </div>
+        <div class="popup popup-md-small" [class.visually-hidden-popup]="visuallyHiddenPopup04" [style.display]="displayPopup04"
+            (click)="$event.stopPropagation();" (animationend)="onTransitionEndPopup()">
+            <button class="popup-close-button" (click)="closePopup()">
+                <span>x</span>
+            </button>
+            <div class="popup-header">
+                <h2 class="text-center">Stock Trading App</h2>
+            </div>
+            <div class="popup-body">
+                <h3>Automated Stock Trading Application</h3>
+                <p>As one of my side projects, I developed and implemented an investment strategy based on technical financials.
+                    It uses short- to mid-term patterns and has been historically profitable back to 2010.</p>
+                <h3>Technologies</h3>
+                <p>The trading bot is a .NET console application that pulls and analyzes level-one stock data from eoddata on
+                    a daily basis. Based on some criteria, the bot automatically invests in stocks and ETFs using Interactive
+                    Brokers' API.
+                </p>
+            </div>
+        </div>
+        <div class="popup popup-md-small" [class.visually-hidden-popup]="visuallyHiddenPopup05" [style.display]="displayPopup05"
+            (click)="$event.stopPropagation();" (animationend)="onTransitionEndPopup()">
+            <button class="popup-close-button" (click)="closePopup()">
+                <span>x</span>
+            </button>
+            <div class="popup-header">
+                <h2 class="text-center">This Website</h2>
+            </div>
+            <div class="popup-body">
+                <h3>Technologies</h3>
+                <p>This website has been created using some of the latest technologies I am familiar with and use on a daily
+                    basis: ASP.NET Core and Angular 4. In addition, this site has been published using the concept of continuous
+                    development and integration by means of Azure Web Apps.</p>
+            </div>
+        </div>
+        <div class="popup" [class.visually-hidden-popup]="visuallyHiddenPopup06" [style.display]="displayPopup06" (click)="$event.stopPropagation();"
+            (animationend)="onTransitionEndPopup()">
+            <button class="popup-close-button" (click)="closePopup()">
+                <span>x</span>
+            </button>
+            <div class="popup-header">
+                <h2 class="text-center">.NET and .NET Core 2</h2>
+            </div>
+            <div class="popup-body">
+                <h3>.NET and .NET Core</h3>
+                <p>As of Nov 2017, I tend to use .NET Core rather than .NET whenever it comes to the creation of an app from
+                    the ground up. While .NET Core libraries are slightly immature compared to the ones of .NET used for
+                    years, its simplified libraries and cross-platform capabilities are definitely a huge advantage.</p>
+                <h3>ASP.NET MVC and ASP.NET Core 2</h3>
+                <p>I first started working with ASP.NET MVC and, with time, continued using ASP.NET Core 2 more and more.
+                    When a new back-end needs to be created from scratch, I always suggest using .NET Core-based technologies
+                    instead of the conventional ones tied to Windows. ASP.NET Core has several advantages over ASP.NET MVC.
+                    For example, it has its own dependency injection manager and Web API and MVC have been merged into one
+                    module. As both technologies are very similar to one another despite these basic differences, I am happy
+                    to help my clients with older versions of .NET as well.</p>
+                <h3>Entity Framework and Entity Framework Core</h3>
+                <p>As of Nov 2017, Entity Framework Core's library is slightly less mature than the traditional Windows-based
+                    one. However, I have not faced any larger difficulties that would have made the implementation significantly
+                    harder or more time-consuming. Again, both frameworks are very similar and, hence, I can use either one
+                    depending on the project's needs.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
