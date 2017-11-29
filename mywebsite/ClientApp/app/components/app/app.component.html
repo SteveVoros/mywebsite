@@ -3,19 +3,19 @@
         <button class="callme-button" (click)="openContactToasty()">
             <span class="glyphicon glyphicon-earphone phone"></span>
         </button>
-        <a [routerLink]="['/contact']" fragment="title" class="hireme">
-            Hire me now
+        <a [routerLink]="['/contact']" fragment="title" class="contactme">
+            Contact me
         </a>
     </div>
     <div class="toasty-background" [class.visually-hidden-background]="visuallyHiddenBackground" [style.display]="displayBackground" (click)="closeToasty()">
-        <div class="toasty toasty-hireme" [class.visually-hidden-toasty]="visuallyHiddenContactToasty" [style.display]="displayContactToasty" (click)="$event.stopPropagation();" (animationend)="onTransitionEndContactToasty()">
-            <div class="toasty-hireme-header">
+        <div class="toasty toasty-contactme" [class.visually-hidden-toasty]="visuallyHiddenContactToasty" [style.display]="displayContactToasty" (click)="$event.stopPropagation();" (animationend)="onTransitionEndContactToasty()">
+            <div class="toasty-contactme-header">
                 <button class="toasty-close-button" (click)="closeToasty()">
                     <span>x</span>
                 </button>
                 <p>Give Me a Call</p>
             </div>
-            <div class="toasty-hireme-body">
+            <div class="toasty-contactme-body">
                 <div class="phone-number-container">
                     <p>+1
                         <a href="tel:+13125229393"><span class="phone-number">312 522 9393</span></a>

@@ -78,7 +78,7 @@
     animation-duration: 0.3s;
 }
 
-.toasty-hireme {
+.toasty-contactme {
     left: 50vw;
     top: 40vh;
     margin-left: -150px;
@@ -149,7 +149,7 @@
     }
 }
 
-.toasty-hireme-header {
+.toasty-contactme-header {
     background-color: rgb(38, 54, 70);
     height: 33%;
     width: 100%;
@@ -157,7 +157,7 @@
     border-radius: 5px 5px 0 0;
 }
 
-.toasty-hireme-header p {
+.toasty-contactme-header p {
     color: white;
     font-size: 20px;
     line-height: 120px;
@@ -166,7 +166,7 @@
     letter-spacing: 2px;
 }
 
-.toasty-hireme-body {
+.toasty-contactme-body {
     padding: 20px;
 }
 
@@ -295,7 +295,7 @@
     top: 0;
 }
 
-.hireme {
+.contactme {
     background: rgba(236, 8, 92, 0.959);
     color: #FFF;
     border-radius: 50px;
@@ -312,7 +312,7 @@
     text-align: center;
 }
 
-.hireme:hover {
+.contactme:hover {
     border-color: rgb(169, 203, 236);
     background-color: rgb(39, 55, 71);
     color: rgb(169, 203, 236);
@@ -332,7 +332,7 @@
         font-size: 30px;
         height: 62px;
     }
-    .hireme {
+    .contactme {
         border-radius: 50px;
         font-size: 20px;
         padding-right: 25px;
