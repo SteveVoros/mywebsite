@@ -328,6 +328,7 @@ h3 {
 
 .popup-body {
     padding: 20px;
+    font-size: 15px;
 }
 
 .popup-close-button {
@@ -376,7 +377,6 @@ h3 {
 }
 
 .popup p {
-    font-size: 15px;
     text-align: justify;
 }
 
