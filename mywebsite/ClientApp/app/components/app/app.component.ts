@@ -3,6 +3,7 @@ import {
 } from '@angular/core';
 import { ContactService } from '../services/ContactService';
 import { AfterViewInit } from '@angular/core/src/metadata/lifecycle_hooks';
+import { Title } from '@angular/platform-browser';
 
 @Component({
     selector: 'app',
@@ -20,12 +21,15 @@ export class AppComponent implements AfterViewInit {
     visuallyHiddenMessageToasty: boolean = false;
     message: string;
 
+    private homePageTitle: string = 'Home Page - Steven Voros';
+
     @ViewChild('content') mainContent: ElementRef;
 
-    constructor(private contactService: ContactService, private renderer: Renderer2) {
+    constructor(private contactService: ContactService, private renderer: Renderer2, private titleService: Title) {
         contactService.onContactResponse$.subscribe(message => {
             this.openMessageToasty(message);
         });
+        this.titleService.setTitle(this.homePageTitle);
     }
 
     ngAfterViewInit() {

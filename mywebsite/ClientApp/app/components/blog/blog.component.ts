@@ -1,3 +1,4 @@
+import { Title } from '@angular/platform-browser';
 import { Component } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { AutoScrollAfterLoading } from '../shared/AutoScrollAfterLoading';
@@ -8,8 +9,10 @@ import { AutoScrollAfterLoading } from '../shared/AutoScrollAfterLoading';
     styleUrls: ['../shared/shared.css', './blog.component.css']
 })
 export class BlogComponent extends AutoScrollAfterLoading {
+    pageTitle: string = 'Blog - Steven Voros';
 
-    constructor(route: ActivatedRoute) {
+    constructor(route: ActivatedRoute, private titleService: Title) {
         super(route);
+        this.titleService.setTitle(this.pageTitle);
     }
 }

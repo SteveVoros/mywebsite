@@ -1,3 +1,4 @@
+import { Title } from '@angular/platform-browser';
 import { Component } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { AutoScrollAfterLoading } from '../shared/AutoScrollAfterLoading';
@@ -8,13 +9,16 @@ import { AutoScrollAfterLoading } from '../shared/AutoScrollAfterLoading';
     styleUrls: ['../shared/shared.css', './home.component.css']
 })
 export class HomeComponent extends AutoScrollAfterLoading {
-    title = {text: ''};
-    subtitle = {text: ''};
+    title = { text: '' };
+    subtitle = { text: '' };
     textTitle = "Hi, I'm Steven.";
     textSubtitle = 'Welcome to my website.';
 
-    constructor(route: ActivatedRoute) {
+    private pageTitle: string = 'Home Page - Steven Voros';
+
+    constructor(route: ActivatedRoute, private titleService: Title) {
         super(route);
+        this.titleService.setTitle(this.pageTitle);
     }
 
     ngOnInit() {

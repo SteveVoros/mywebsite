@@ -1,3 +1,4 @@
+import { Title } from '@angular/platform-browser';
 import { Http } from '@angular/http';
 import { Component, OnInit, Inject } from '@angular/core';
 import { AutoScrollAfterLoading } from '../shared/AutoScrollAfterLoading';
@@ -11,12 +12,14 @@ import { ContactService } from '../services/ContactService';
   styleUrls: ['../shared/shared.css', './contact.component.css']
 })
 export class ContactComponent extends AutoScrollAfterLoading {
-  
+  private pageTitle: string = 'Contact - Steven Voros';
+
   private baseUrl: string;
   private url: string;
 
-  constructor(route: ActivatedRoute, private http: Http, private contactService: ContactService, @Inject('BASE_URL') baseUrl: string) {
+  constructor(route: ActivatedRoute, private http: Http, private contactService: ContactService, @Inject('BASE_URL') baseUrl: string, private titleService: Title) {
     super(route);
+    this.titleService.setTitle(this.pageTitle);
     this.baseUrl = baseUrl;
     this.url = this.baseUrl + 'api/sendmessage';
   }

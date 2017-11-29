@@ -1,3 +1,4 @@
+import { Title } from '@angular/platform-browser';
 import { Component, Inject, Renderer2 } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { AutoScrollAfterLoading } from '../shared/AutoScrollAfterLoading';
@@ -31,8 +32,11 @@ export class ProjectsComponent extends AutoScrollAfterLoading {
     visuallyHiddenPopup05: boolean = false;
     visuallyHiddenPopup06: boolean = false;
 
-    constructor(route: ActivatedRoute, @Inject('BASE_URL') baseUrl: string, private renderer: Renderer2) {
+    private pageTitle: string = 'Projects - Steven Voros';
+
+    constructor(route: ActivatedRoute, @Inject('BASE_URL') baseUrl: string, private renderer: Renderer2, private titleService: Title ) {
         super(route);
+        this.titleService.setTitle(this.pageTitle);
         this.baseUrl = baseUrl;
         this.imageUrlTile01 = this.baseUrl + 'img/tile-cloud.png';
         this.imageUrlTile02 = this.baseUrl + 'img/tile-cloud-AWS.png';

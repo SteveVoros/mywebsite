@@ -1,3 +1,4 @@
+import { Title } from '@angular/platform-browser';
 import { Component, Inject } from '@angular/core';
 import { AutoScrollAfterLoading } from '../shared/AutoScrollAfterLoading';
 import { ActivatedRoute } from '@angular/router';
@@ -40,8 +41,12 @@ export class AboutComponent extends AutoScrollAfterLoading {
   displayJobDescription03: string = 'none';
   displayJobDescription04: string = 'none';
 
-  constructor(route: ActivatedRoute, @Inject('BASE_URL') baseUrl: string) {
+  private pageTitle: string = 'About - Steven Voros';
+
+  constructor(route: ActivatedRoute, @Inject('BASE_URL') baseUrl: string, private titleService: Title) {
     super(route);
+    this.titleService.setTitle(this.pageTitle);
+
     this.baseUrl = baseUrl;
     this.img01Url = this.baseUrl + 'img/laptop-01_640.jpg';
     this.img02Url = this.baseUrl + 'img/consulting.jpg';
@@ -80,19 +85,19 @@ export class AboutComponent extends AutoScrollAfterLoading {
       this.displayJobDescription03 = 'none';
       this.displayJobDescription04 = 'none';
     }
-    else if(element.id == 'selector02') {
+    else if (element.id == 'selector02') {
       this.displayJobDescription01 = 'none';
       this.displayJobDescription02 = 'initial';
       this.displayJobDescription03 = 'none';
       this.displayJobDescription04 = 'none';
     }
-    else if(element.id == 'selector03') {
+    else if (element.id == 'selector03') {
       this.displayJobDescription01 = 'none';
       this.displayJobDescription02 = 'none';
       this.displayJobDescription03 = 'initial';
       this.displayJobDescription04 = 'none';
     }
-    else if(element.id == 'selector04') {
+    else if (element.id == 'selector04') {
       this.displayJobDescription01 = 'none';
       this.displayJobDescription02 = 'none';
       this.displayJobDescription03 = 'none';
