@@ -80,3 +80,9 @@
     font-size: 60px;
     color: #273747;
 }
+
+@media (min-width: 1200px) {
+    .projects-container {
+        width: 800px;
+    }
+}
