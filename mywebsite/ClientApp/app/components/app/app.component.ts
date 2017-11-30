@@ -3,7 +3,7 @@ import {
 } from '@angular/core';
 import { ContactService } from '../services/ContactService';
 import { AfterViewInit } from '@angular/core/src/metadata/lifecycle_hooks';
-import { Title } from '@angular/platform-browser';
+import { Title, Meta } from '@angular/platform-browser';
 
 @Component({
     selector: 'app',
@@ -25,11 +25,15 @@ export class AppComponent implements AfterViewInit {
 
     @ViewChild('content') mainContent: ElementRef;
 
-    constructor(private contactService: ContactService, private renderer: Renderer2, private titleService: Title) {
+    constructor(private contactService: ContactService, private renderer: Renderer2, private titleService: Title, private metadataService: Meta) {
         contactService.onContactResponse$.subscribe(message => {
             this.openMessageToasty(message);
         });
+
         this.titleService.setTitle(this.homePageTitle);
+        this.metadataService.addTag({name: 'author', content: 'Steven Voros'});
+        this.metadataService.addTag({name: 'keywords', content: 'Web Development, Software, Software Development, Full-stack, Developer, Consultant, Azure Cloud, Azure, ASP.NET, .NET, .NET Core, Angular'});
+        this.metadataService.addTag({name: 'description', content: `Website of Steven Voros. Software developer, full-stack .NET developer specialized in Azure Cloud and Angular.`});
     }
 
     ngAfterViewInit() {
