@@ -33,7 +33,7 @@ export class AppComponent implements AfterViewInit {
         this.titleService.setTitle(this.homePageTitle);
         this.metadataService.addTag({name: 'author', content: 'Steven Voros'});
         this.metadataService.addTag({name: 'keywords', content: 'Web Development, Software, Software Development, Full-stack, Developer, Consultant, Azure Cloud, Azure, ASP.NET, .NET, .NET Core, Angular'});
-        this.metadataService.addTag({name: 'description', content: `Website of Steven Voros. Software developer, full-stack .NET developer specialized in Azure Cloud and Angular.`});
+        this.metadataService.addTag({name: 'description', content: `Steven Voros's Website. Software developer, full-stack .NET developer specialized in Azure Cloud and Angular.`});
     }
 
     ngAfterViewInit() {
